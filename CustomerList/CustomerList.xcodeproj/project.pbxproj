@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443A320CBEF750028E64D /* SellerViewController.swift */; };
 		7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443A520CBEF980028E64D /* BuyerViewController.swift */; };
+		7E4443AC20CBFE090028E64D /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443AB20CBFE090028E64D /* Gender.swift */; };
+		7E4443AE20CBFEA30028E64D /* NumberOfKids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443AD20CBFEA30028E64D /* NumberOfKids.swift */; };
+		7E4443B020CBFF650028E64D /* NumberOfFamilyMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443AF20CBFF650028E64D /* NumberOfFamilyMembers.swift */; };
+		7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443B120CC023C0028E64D /* MaritalStatus.swift */; };
+		7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443B320CC02740028E64D /* ApartmentType.swift */; };
 		7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A970C20C5602700A383BA /* AppDelegate.swift */; };
 		7E6A971220C5602700A383BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6A971020C5602700A383BA /* Main.storyboard */; };
 		7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A971320C5602700A383BA /* CustomerList.xcdatamodeld */; };
@@ -38,6 +43,11 @@
 /* Begin PBXFileReference section */
 		7E4443A320CBEF750028E64D /* SellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerViewController.swift; sourceTree = "<group>"; };
 		7E4443A520CBEF980028E64D /* BuyerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerViewController.swift; sourceTree = "<group>"; };
+		7E4443AB20CBFE090028E64D /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		7E4443AD20CBFEA30028E64D /* NumberOfKids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfKids.swift; sourceTree = "<group>"; };
+		7E4443AF20CBFF650028E64D /* NumberOfFamilyMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfFamilyMembers.swift; sourceTree = "<group>"; };
+		7E4443B120CC023C0028E64D /* MaritalStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritalStatus.swift; sourceTree = "<group>"; };
+		7E4443B320CC02740028E64D /* ApartmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentType.swift; sourceTree = "<group>"; };
 		7E6A970920C5602700A383BA /* CustomerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6A970C20C5602700A383BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6A971120C5602700A383BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +88,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E4443A720CBFCA00028E64D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7E4443A320CBEF750028E64D /* SellerViewController.swift */,
+				7E4443A520CBEF980028E64D /* BuyerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7E4443A820CBFCB60028E64D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E4443A920CBFCC80028E64D /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				7E4443AB20CBFE090028E64D /* Gender.swift */,
+				7E4443AD20CBFEA30028E64D /* NumberOfKids.swift */,
+				7E4443AF20CBFF650028E64D /* NumberOfFamilyMembers.swift */,
+				7E4443B120CC023C0028E64D /* MaritalStatus.swift */,
+				7E4443B320CC02740028E64D /* ApartmentType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		7E4443AA20CBFCD70028E64D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		7E6A970020C5602700A383BA = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +146,16 @@
 		7E6A970B20C5602700A383BA /* CustomerList */ = {
 			isa = PBXGroup;
 			children = (
+				7E4443AA20CBFCD70028E64D /* Extension */,
+				7E4443A920CBFCC80028E64D /* Enum */,
+				7E4443A820CBFCB60028E64D /* View */,
+				7E4443A720CBFCA00028E64D /* Controller */,
 				7E6A970C20C5602700A383BA /* AppDelegate.swift */,
 				7E6A971020C5602700A383BA /* Main.storyboard */,
 				7E6A971620C5603700A383BA /* Assets.xcassets */,
 				7E6A971820C5603700A383BA /* LaunchScreen.storyboard */,
 				7E6A971B20C5603700A383BA /* Info.plist */,
 				7E6A971320C5602700A383BA /* CustomerList.xcdatamodeld */,
-				7E4443A320CBEF750028E64D /* SellerViewController.swift */,
-				7E4443A520CBEF980028E64D /* BuyerViewController.swift */,
 			);
 			path = CustomerList;
 			sourceTree = "<group>";
@@ -263,6 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */,
+				7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */,
+				7E4443AC20CBFE090028E64D /* Gender.swift in Sources */,
+				7E4443B020CBFF650028E64D /* NumberOfFamilyMembers.swift in Sources */,
+				7E4443AE20CBFEA30028E64D /* NumberOfKids.swift in Sources */,
+				7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */,
 				7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */,
 				7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */,
 				7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */,
