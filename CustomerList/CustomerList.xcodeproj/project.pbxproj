@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443A320CBEF750028E64D /* SellerViewController.swift */; };
+		7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443A520CBEF980028E64D /* BuyerViewController.swift */; };
 		7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A970C20C5602700A383BA /* AppDelegate.swift */; };
 		7E6A971220C5602700A383BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6A971020C5602700A383BA /* Main.storyboard */; };
 		7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A971320C5602700A383BA /* CustomerList.xcdatamodeld */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E4443A320CBEF750028E64D /* SellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerViewController.swift; sourceTree = "<group>"; };
+		7E4443A520CBEF980028E64D /* BuyerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerViewController.swift; sourceTree = "<group>"; };
 		7E6A970920C5602700A383BA /* CustomerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6A970C20C5602700A383BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6A971120C5602700A383BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				7E6A971820C5603700A383BA /* LaunchScreen.storyboard */,
 				7E6A971B20C5603700A383BA /* Info.plist */,
 				7E6A971320C5602700A383BA /* CustomerList.xcdatamodeld */,
+				7E4443A320CBEF750028E64D /* SellerViewController.swift */,
+				7E4443A520CBEF980028E64D /* BuyerViewController.swift */,
 			);
 			path = CustomerList;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */,
 				7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */,
+				7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */,
 				7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

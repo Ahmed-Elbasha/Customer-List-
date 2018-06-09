@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hg5-fO-iQa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hg5-fO-iQa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--مشتري-->
         <scene sceneID="NLq-7O-EkS">
             <objects>
-                <viewController id="NiC-T4-YKd" sceneMemberID="viewController">
+                <viewController id="NiC-T4-YKd" customClass="BuyerViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rgh-zE-wBU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,14 +125,34 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6A-GO-pSA">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click + button to add new  buyer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6y-UX-fBd">
+                                        <rect key="frame" x="51" y="256" width="273.5" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="G6y-UX-fBd" firstAttribute="centerX" secondItem="U6A-GO-pSA" secondAttribute="centerX" id="FEN-HD-6nl"/>
+                                    <constraint firstItem="G6y-UX-fBd" firstAttribute="centerY" secondItem="U6A-GO-pSA" secondAttribute="centerY" id="H6i-0h-fnd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="U6A-GO-pSA" firstAttribute="trailing" secondItem="yKC-bR-HfN" secondAttribute="trailing" id="9Wg-WA-h49"/>
                             <constraint firstItem="QOV-rL-D9L" firstAttribute="trailing" secondItem="yKC-bR-HfN" secondAttribute="trailing" id="INY-jg-jdW"/>
                             <constraint firstItem="mR3-sm-nc5" firstAttribute="top" secondItem="QOV-rL-D9L" secondAttribute="bottom" id="KmQ-Cd-wrL"/>
+                            <constraint firstItem="U6A-GO-pSA" firstAttribute="leading" secondItem="yKC-bR-HfN" secondAttribute="leading" id="Mum-4O-SI9"/>
+                            <constraint firstItem="U6A-GO-pSA" firstAttribute="top" secondItem="QOV-rL-D9L" secondAttribute="bottom" id="TAw-O0-TLQ"/>
                             <constraint firstItem="QOV-rL-D9L" firstAttribute="top" secondItem="yKC-bR-HfN" secondAttribute="top" id="WOw-Eg-hcN"/>
                             <constraint firstItem="mR3-sm-nc5" firstAttribute="top" secondItem="QOV-rL-D9L" secondAttribute="bottom" id="bcQ-OV-qUd"/>
                             <constraint firstItem="mR3-sm-nc5" firstAttribute="bottom" secondItem="yKC-bR-HfN" secondAttribute="bottom" id="j0p-bl-meO"/>
+                            <constraint firstItem="U6A-GO-pSA" firstAttribute="bottom" secondItem="yKC-bR-HfN" secondAttribute="bottom" id="uBN-7R-S7Q"/>
                             <constraint firstItem="QOV-rL-D9L" firstAttribute="leading" secondItem="yKC-bR-HfN" secondAttribute="leading" id="vgd-I6-WF6"/>
                             <constraint firstItem="mR3-sm-nc5" firstAttribute="leading" secondItem="yKC-bR-HfN" secondAttribute="leading" id="xjt-eU-k2B"/>
                             <constraint firstItem="mR3-sm-nc5" firstAttribute="trailing" secondItem="yKC-bR-HfN" secondAttribute="trailing" id="zId-TW-Njd"/>
@@ -148,7 +168,7 @@
         <!--بائع-->
         <scene sceneID="loW-Jn-TVd">
             <objects>
-                <viewController id="vHq-vz-rHa" sceneMemberID="viewController">
+                <viewController id="vHq-vz-rHa" customClass="SellerViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dH6-Yf-98e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,12 +279,32 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6a-VJ-vyK">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="click + button to add new  seller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-eR-qnO">
+                                        <rect key="frame" x="52" y="256" width="271" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oDE-eR-qnO" firstAttribute="centerY" secondItem="Q6a-VJ-vyK" secondAttribute="centerY" id="ByS-Fa-mcg"/>
+                                    <constraint firstItem="oDE-eR-qnO" firstAttribute="centerX" secondItem="Q6a-VJ-vyK" secondAttribute="centerX" id="P2G-IY-YuP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Q6a-VJ-vyK" firstAttribute="top" secondItem="bvi-gU-guR" secondAttribute="bottom" id="5k8-hv-rrR"/>
                             <constraint firstItem="30q-zM-ZMa" firstAttribute="bottom" secondItem="ehv-hD-2kM" secondAttribute="bottom" id="5oA-hf-Jpf"/>
+                            <constraint firstItem="Q6a-VJ-vyK" firstAttribute="leading" secondItem="ehv-hD-2kM" secondAttribute="leading" id="FQR-FU-6K3"/>
                             <constraint firstItem="30q-zM-ZMa" firstAttribute="leading" secondItem="ehv-hD-2kM" secondAttribute="leading" id="GsE-if-5ue"/>
+                            <constraint firstItem="Q6a-VJ-vyK" firstAttribute="bottom" secondItem="ehv-hD-2kM" secondAttribute="bottom" id="LaU-zz-whJ"/>
                             <constraint firstItem="30q-zM-ZMa" firstAttribute="top" secondItem="bvi-gU-guR" secondAttribute="bottom" id="RiA-kn-q2y"/>
+                            <constraint firstItem="Q6a-VJ-vyK" firstAttribute="trailing" secondItem="ehv-hD-2kM" secondAttribute="trailing" id="bRI-BU-GQY"/>
                             <constraint firstItem="30q-zM-ZMa" firstAttribute="top" secondItem="bvi-gU-guR" secondAttribute="bottom" id="ihl-Rs-oYv"/>
                             <constraint firstItem="bvi-gU-guR" firstAttribute="leading" secondItem="ehv-hD-2kM" secondAttribute="leading" id="ihu-WP-8Nf"/>
                             <constraint firstItem="30q-zM-ZMa" firstAttribute="trailing" secondItem="ehv-hD-2kM" secondAttribute="trailing" id="laJ-AG-KIy"/>
@@ -277,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8r-dB-1kN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-251" y="-470"/>
+            <point key="canvasLocation" x="-252" y="-470.01499250374815"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="beQ-Y6-BMu">
