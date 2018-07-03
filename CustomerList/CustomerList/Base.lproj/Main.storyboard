@@ -172,7 +172,7 @@
                                         </constraints>
                                         <state key="normal" image="plusicon"/>
                                         <connections>
-                                            <segue destination="zVv-fy-tdB" kind="show" id="IyQ-ZG-r0Y"/>
+                                            <segue destination="zVv-fy-tdB" kind="showDetail" id="IyQ-ZG-r0Y"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RemaxLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yA9-J2-xpY">
@@ -329,6 +329,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="siH-rR-aOd" kind="showDetail" id="aX7-ak-aR4"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0Jg-aR-Y9p">
                                 <rect key="frame" x="16" y="100" width="343" height="288"/>
@@ -378,16 +381,16 @@
                                         <rect key="frame" x="0.0" y="92" width="343" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الميلاد:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhG-rl-zAR">
-                                                <rect key="frame" x="245" y="0.0" width="98" height="100"/>
+                                                <rect key="frame" x="250" y="0.0" width="93" height="100"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="x9p-95-lON">
-                                                <rect key="frame" x="0.0" y="0.0" width="245" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="eQb-MS-MqK"/>
-                                                    <constraint firstAttribute="width" constant="245" id="ldX-ls-1RL"/>
+                                                    <constraint firstAttribute="width" constant="250" id="ldX-ls-1RL"/>
                                                 </constraints>
                                                 <date key="date" timeIntervalSinceReferenceDate="550496621.58292699">
                                                     <!--2018-06-12 11:43:41 +0000-->
