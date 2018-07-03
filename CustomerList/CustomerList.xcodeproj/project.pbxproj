@@ -23,6 +23,7 @@
 		7E6A973020C5603E00A383BA /* CustomerListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */; };
 		7E83501020EC31A600A40188 /* contractType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83500F20EC31A600A40188 /* contractType.swift */; };
 		7E83501220EC327900A40188 /* finishingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501120EC327900A40188 /* finishingType.swift */; };
+		7E83501420EC387B00A40188 /* InsertSellerContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */; };
 		7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		7E6A973120C5603E00A383BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E83500F20EC31A600A40188 /* contractType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractType.swift; sourceTree = "<group>"; };
 		7E83501120EC327900A40188 /* finishingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishingType.swift; sourceTree = "<group>"; };
+		7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerContactInformationViewController.swift; sourceTree = "<group>"; };
 		7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerPersonalInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				7E4443A320CBEF750028E64D /* SellerViewController.swift */,
 				7E4443A520CBEF980028E64D /* BuyerViewController.swift */,
 				7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */,
+				7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */,
 				7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */,
 				7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */,
+				7E83501420EC387B00A40188 /* InsertSellerContactInformationViewController.swift in Sources */,
 				7E4443AC20CBFE090028E64D /* Gender.swift in Sources */,
 				7E4443B020CBFF650028E64D /* NumberOfFamilyMembers.swift in Sources */,
 				7E4443AE20CBFEA30028E64D /* NumberOfKids.swift in Sources */,
