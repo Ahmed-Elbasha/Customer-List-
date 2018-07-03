@@ -21,6 +21,8 @@
 		7E6A971A20C5603700A383BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6A971820C5603700A383BA /* LaunchScreen.storyboard */; };
 		7E6A972520C5603E00A383BA /* CustomerListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972420C5603E00A383BA /* CustomerListTests.swift */; };
 		7E6A973020C5603E00A383BA /* CustomerListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */; };
+		7E83501020EC31A600A40188 /* contractType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83500F20EC31A600A40188 /* contractType.swift */; };
+		7E83501220EC327900A40188 /* finishingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501120EC327900A40188 /* finishingType.swift */; };
 		7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		7E6A972B20C5603E00A383BA /* CustomerListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomerListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListUITests.swift; sourceTree = "<group>"; };
 		7E6A973120C5603E00A383BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E83500F20EC31A600A40188 /* contractType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractType.swift; sourceTree = "<group>"; };
+		7E83501120EC327900A40188 /* finishingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishingType.swift; sourceTree = "<group>"; };
 		7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerPersonalInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,8 @@
 				7E4443AF20CBFF650028E64D /* NumberOfFamilyMembers.swift */,
 				7E4443B120CC023C0028E64D /* MaritalStatus.swift */,
 				7E4443B320CC02740028E64D /* ApartmentType.swift */,
+				7E83500F20EC31A600A40188 /* contractType.swift */,
+				7E83501120EC327900A40188 /* finishingType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 				7E4443AC20CBFE090028E64D /* Gender.swift in Sources */,
 				7E4443B020CBFF650028E64D /* NumberOfFamilyMembers.swift in Sources */,
 				7E4443AE20CBFEA30028E64D /* NumberOfKids.swift in Sources */,
+				7E83501020EC31A600A40188 /* contractType.swift in Sources */,
+				7E83501220EC327900A40188 /* finishingType.swift in Sources */,
 				7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */,
 				7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */,
 				7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */,
