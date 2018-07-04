@@ -115,18 +115,9 @@
 		7E4443A720CBFCA00028E64D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7E4443A320CBEF750028E64D /* SellerViewController.swift */,
-				7E4443A520CBEF980028E64D /* BuyerViewController.swift */,
-				7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */,
-				7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */,
-				7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */,
-				7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */,
-				7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */,
-				7E58CD3920ED5D2400AB0FF1 /* RealEstateViewController.swift */,
-				7E58CD3B20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift */,
-				7E58CD3D20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift */,
-				7E58CD3F20ED7F7300AB0FF1 /* RealEstateDetailPartThreeViewController.swift */,
-				7E58CD4120ED85A500AB0FF1 /* RealEstateDetailPartFourViewController.swift */,
+				7E58CD4520ED8CFC00AB0FF1 /* Real Estate */,
+				7E58CD4420ED8CE600AB0FF1 /* Buyer */,
+				7E58CD4320ED8CD900AB0FF1 /* Seller */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +148,39 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7E58CD4320ED8CD900AB0FF1 /* Seller */ = {
+			isa = PBXGroup;
+			children = (
+				7E4443A320CBEF750028E64D /* SellerViewController.swift */,
+				7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */,
+				7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */,
+			);
+			path = Seller;
+			sourceTree = "<group>";
+		};
+		7E58CD4420ED8CE600AB0FF1 /* Buyer */ = {
+			isa = PBXGroup;
+			children = (
+				7E4443A520CBEF980028E64D /* BuyerViewController.swift */,
+				7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */,
+				7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */,
+				7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */,
+			);
+			path = Buyer;
+			sourceTree = "<group>";
+		};
+		7E58CD4520ED8CFC00AB0FF1 /* Real Estate */ = {
+			isa = PBXGroup;
+			children = (
+				7E58CD3920ED5D2400AB0FF1 /* RealEstateViewController.swift */,
+				7E58CD3B20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift */,
+				7E58CD3D20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift */,
+				7E58CD3F20ED7F7300AB0FF1 /* RealEstateDetailPartThreeViewController.swift */,
+				7E58CD4120ED85A500AB0FF1 /* RealEstateDetailPartFourViewController.swift */,
+			);
+			path = "Real Estate";
 			sourceTree = "<group>";
 		};
 		7E6A970020C5602700A383BA = {
