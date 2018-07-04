@@ -1,14 +1,14 @@
 //
-//  InsertSellerPersonalInformationViewController.swift
+//  RealEstateDetailPartTwoViewController.swift
 //  CustomerList
 //
-//  Created by Ahmed Elbasha on 6/10/18.
+//  Created by Ahmed Elbasha on 7/4/18.
 //  Copyright © 2018 Ahmed Elbasha. All rights reserved.
 //
 
 import UIKit
 
-class InsertSellerPersonalInformationViewController: UIViewController {
+class RealEstateDetailPartTwoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +31,9 @@ class InsertSellerPersonalInformationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
+
 }

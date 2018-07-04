@@ -16,6 +16,11 @@
 		7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443B320CC02740028E64D /* ApartmentType.swift */; };
 		7E58CD3620ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */; };
 		7E58CD3820ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */; };
+		7E58CD3A20ED5D2400AB0FF1 /* RealEstateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3920ED5D2400AB0FF1 /* RealEstateViewController.swift */; };
+		7E58CD3C20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3B20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift */; };
+		7E58CD3E20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3D20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift */; };
+		7E58CD4020ED7F7300AB0FF1 /* RealEstateDetailPartThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3F20ED7F7300AB0FF1 /* RealEstateDetailPartThreeViewController.swift */; };
+		7E58CD4220ED85A500AB0FF1 /* RealEstateDetailPartFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD4120ED85A500AB0FF1 /* RealEstateDetailPartFourViewController.swift */; };
 		7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A970C20C5602700A383BA /* AppDelegate.swift */; };
 		7E6A971220C5602700A383BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6A971020C5602700A383BA /* Main.storyboard */; };
 		7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A971320C5602700A383BA /* CustomerList.xcdatamodeld */; };
@@ -57,6 +62,11 @@
 		7E4443B320CC02740028E64D /* ApartmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentType.swift; sourceTree = "<group>"; };
 		7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerMaritalAndFamilyInformationViewController.swift; sourceTree = "<group>"; };
 		7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerContactInformationViewController.swift; sourceTree = "<group>"; };
+		7E58CD3920ED5D2400AB0FF1 /* RealEstateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateViewController.swift; sourceTree = "<group>"; };
+		7E58CD3B20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateDetailInfoPartOneViewController.swift; sourceTree = "<group>"; };
+		7E58CD3D20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateDetailPartTwoViewController.swift; sourceTree = "<group>"; };
+		7E58CD3F20ED7F7300AB0FF1 /* RealEstateDetailPartThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateDetailPartThreeViewController.swift; sourceTree = "<group>"; };
+		7E58CD4120ED85A500AB0FF1 /* RealEstateDetailPartFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateDetailPartFourViewController.swift; sourceTree = "<group>"; };
 		7E6A970920C5602700A383BA /* CustomerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6A970C20C5602700A383BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6A971120C5602700A383BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +122,11 @@
 				7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */,
 				7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */,
 				7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */,
+				7E58CD3920ED5D2400AB0FF1 /* RealEstateViewController.swift */,
+				7E58CD3B20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift */,
+				7E58CD3D20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift */,
+				7E58CD3F20ED7F7300AB0FF1 /* RealEstateDetailPartThreeViewController.swift */,
+				7E58CD4120ED85A500AB0FF1 /* RealEstateDetailPartFourViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -331,6 +346,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */,
+				7E58CD3E20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift in Sources */,
+				7E58CD3C20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift in Sources */,
 				7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */,
 				7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */,
 				7E58CD3620ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift in Sources */,
@@ -344,8 +361,11 @@
 				7E83501220EC327900A40188 /* finishingType.swift in Sources */,
 				7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */,
 				7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */,
+				7E58CD3A20ED5D2400AB0FF1 /* RealEstateViewController.swift in Sources */,
 				7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */,
 				7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */,
+				7E58CD4220ED85A500AB0FF1 /* RealEstateDetailPartFourViewController.swift in Sources */,
+				7E58CD4020ED7F7300AB0FF1 /* RealEstateDetailPartThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
