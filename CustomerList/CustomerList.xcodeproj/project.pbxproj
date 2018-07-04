@@ -14,6 +14,8 @@
 		7E4443B020CBFF650028E64D /* NumberOfFamilyMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443AF20CBFF650028E64D /* NumberOfFamilyMembers.swift */; };
 		7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443B120CC023C0028E64D /* MaritalStatus.swift */; };
 		7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443B320CC02740028E64D /* ApartmentType.swift */; };
+		7E58CD3620ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */; };
+		7E58CD3820ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */; };
 		7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A970C20C5602700A383BA /* AppDelegate.swift */; };
 		7E6A971220C5602700A383BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6A971020C5602700A383BA /* Main.storyboard */; };
 		7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A971320C5602700A383BA /* CustomerList.xcdatamodeld */; };
@@ -24,6 +26,7 @@
 		7E83501020EC31A600A40188 /* contractType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83500F20EC31A600A40188 /* contractType.swift */; };
 		7E83501220EC327900A40188 /* finishingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501120EC327900A40188 /* finishingType.swift */; };
 		7E83501420EC387B00A40188 /* InsertSellerContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */; };
+		7E83501620EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */; };
 		7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,8 @@
 		7E4443AF20CBFF650028E64D /* NumberOfFamilyMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfFamilyMembers.swift; sourceTree = "<group>"; };
 		7E4443B120CC023C0028E64D /* MaritalStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritalStatus.swift; sourceTree = "<group>"; };
 		7E4443B320CC02740028E64D /* ApartmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentType.swift; sourceTree = "<group>"; };
+		7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerMaritalAndFamilyInformationViewController.swift; sourceTree = "<group>"; };
+		7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerContactInformationViewController.swift; sourceTree = "<group>"; };
 		7E6A970920C5602700A383BA /* CustomerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6A970C20C5602700A383BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6A971120C5602700A383BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 		7E83500F20EC31A600A40188 /* contractType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractType.swift; sourceTree = "<group>"; };
 		7E83501120EC327900A40188 /* finishingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishingType.swift; sourceTree = "<group>"; };
 		7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerContactInformationViewController.swift; sourceTree = "<group>"; };
+		7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerPersonalInformationViewController.swift; sourceTree = "<group>"; };
 		7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerPersonalInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +109,9 @@
 				7E4443A520CBEF980028E64D /* BuyerViewController.swift */,
 				7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */,
 				7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */,
+				7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */,
+				7E58CD3520ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift */,
+				7E58CD3720ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,11 +333,14 @@
 				7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */,
 				7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */,
 				7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */,
+				7E58CD3620ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift in Sources */,
 				7E83501420EC387B00A40188 /* InsertSellerContactInformationViewController.swift in Sources */,
 				7E4443AC20CBFE090028E64D /* Gender.swift in Sources */,
 				7E4443B020CBFF650028E64D /* NumberOfFamilyMembers.swift in Sources */,
 				7E4443AE20CBFEA30028E64D /* NumberOfKids.swift in Sources */,
 				7E83501020EC31A600A40188 /* contractType.swift in Sources */,
+				7E58CD3820ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift in Sources */,
+				7E83501620EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift in Sources */,
 				7E83501220EC327900A40188 /* finishingType.swift in Sources */,
 				7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */,
 				7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */,
