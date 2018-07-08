@@ -357,7 +357,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="moj-h7-7mf">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="moj-h7-7mf">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="j4w-de-mu0"/>
@@ -399,11 +399,17 @@
                                                     <constraint firstAttribute="height" constant="80" id="unb-Zg-VsJ"/>
                                                 </constraints>
                                                 <state key="normal" image="male-icon"/>
+                                                <connections>
+                                                    <action selector="maleButtonWasPressed:" destination="zVv-fy-tdB" eventType="touchUpInside" id="Fcg-iJ-QMU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exk-r2-2WH">
                                                 <rect key="frame" x="167.5" y="0.0" width="175.5" height="80"/>
                                                 <color key="backgroundColor" red="0.91945201160000001" green="0.4974248" blue="0.88097022349999998" alpha="0.6035081336" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" image="female"/>
+                                                <connections>
+                                                    <action selector="femaleButtonWasPressed:" destination="zVv-fy-tdB" eventType="touchUpInside" id="9EJ-6z-GsJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -421,10 +427,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P5H-Wg-2cb"/>
                     </view>
+                    <connections>
+                        <outlet property="birthDayDatePicker" destination="x9p-95-lON" id="h41-Kx-Bjv"/>
+                        <outlet property="femaleButton" destination="exk-r2-2WH" id="12X-sF-fto"/>
+                        <outlet property="maleButton" destination="Eo1-vZ-5K7" id="844-Zs-pKd"/>
+                        <outlet property="nationalityTextField" destination="moj-h7-7mf" id="n3K-ce-6FY"/>
+                        <outlet property="sellerNameTextField" destination="6bk-JA-iUr" id="1lj-rJ-gwS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T9e-ih-yru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="-470.01499250374815"/>
+            <point key="canvasLocation" x="1572" y="-519"/>
         </scene>
         <!--Insert Seller Contact Information View Controller-->
         <scene sceneID="hxx-sd-Zda">
@@ -668,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7i-MG-PZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2356" y="-470"/>
+            <point key="canvasLocation" x="2370" y="-519"/>
         </scene>
         <!--وحدة-->
         <scene sceneID="nb4-Er-Krj">
@@ -2127,6 +2140,6 @@
         <image name="back_btn" width="13" height="21"/>
         <image name="female" width="57" height="57"/>
         <image name="male-icon" width="57" height="57"/>
-        <image name="plusicon" width="17" height="20"/>
+        <image name="plusicon" width="11" height="13"/>
     </resources>
 </document>

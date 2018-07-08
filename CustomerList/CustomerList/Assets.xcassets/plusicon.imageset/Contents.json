@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Screen_Shot_2018_07_08_at_12.48.56_AM@3x.png",
+      "filename" : "Screen_Shot_2018_07_08_at_12.48.56_AM@2x-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Screen_Shot_2018_07_08_at_12.48.56_AM@3x-1.png",
+      "filename" : "Screen_Shot_2018_07_08_at_12.48.56_AM@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Screen_Shot_2018_07_08_at_12.48.56_AM@3x-2.png",
+      "filename" : "Screen_Shot_2018_07_08_at_12.48.56_AM@2x-1.png",
       "scale" : "3x"
     }
   ],
