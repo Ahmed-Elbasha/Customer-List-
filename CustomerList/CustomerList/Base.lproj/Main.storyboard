@@ -13,7 +13,7 @@
         <!--مشتري-->
         <scene sceneID="NLq-7O-EkS">
             <objects>
-                <viewController id="NiC-T4-YKd" customClass="BuyerViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BuyerViewController" id="NiC-T4-YKd" customClass="BuyerViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rgh-zE-wBU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,12 +137,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRq-Bd-Of2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="236"/>
+            <point key="canvasLocation" x="734" y="269"/>
         </scene>
         <!--بائع-->
         <scene sceneID="loW-Jn-TVd">
             <objects>
-                <viewController id="vHq-vz-rHa" customClass="SellerViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellerViewController" id="vHq-vz-rHa" customClass="SellerViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dH6-Yf-98e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
         <!--Insert Seller Personal Information View Controller-->
         <scene sceneID="Xqp-kd-w0c">
             <objects>
-                <viewController id="zVv-fy-tdB" customClass="InsertSellerPersonalInformationViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InsertSellerPersonalInformationViewController" id="zVv-fy-tdB" customClass="InsertSellerPersonalInformationViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aqR-fB-vc2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -698,7 +698,7 @@
         <!--وحدة-->
         <scene sceneID="nb4-Er-Krj">
             <objects>
-                <viewController id="fkT-kh-b49" customClass="RealEstateViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RealEstateViewController" id="fkT-kh-b49" customClass="RealEstateViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RU2-DP-eWD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -829,7 +829,7 @@
         <!--Real Estate Detail Info Part One View Controller-->
         <scene sceneID="pAi-Z6-IUn">
             <objects>
-                <viewController id="V6D-Vc-Wjn" customClass="RealEstateDetailInfoPartOneViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RealEstateDetailInfoPartOneViewController" id="V6D-Vc-Wjn" customClass="RealEstateDetailInfoPartOneViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0F-Mt-cDA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1095,7 +1095,7 @@
         <!--Insert Buyer Contact Information View Controller-->
         <scene sceneID="u8W-iu-Oxn">
             <objects>
-                <viewController id="M3B-Tg-oLY" customClass="InsertBuyerContactInformationViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InsertBuyerContactInformationViewController" id="M3B-Tg-oLY" customClass="InsertBuyerContactInformationViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YGO-QI-C75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1339,7 +1339,7 @@
         <!--Insert Buyer Personal Information View Controller-->
         <scene sceneID="bgf-Ko-jfy">
             <objects>
-                <viewController id="TgX-C4-2pK" customClass="InsertBuyerPersonalInformationViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InsertBuyerPersonalInformationViewController" id="TgX-C4-2pK" customClass="InsertBuyerPersonalInformationViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ITZ-ki-xc5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1654,7 +1654,7 @@
         <!--Real Estate Detail Part Two View Controller-->
         <scene sceneID="gcd-Sf-JZh">
             <objects>
-                <viewController id="ciQ-sL-H6C" customClass="RealEstateDetailPartTwoViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RealEstateDetailPartTwoViewController" id="ciQ-sL-H6C" customClass="RealEstateDetailPartTwoViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jyV-OI-A6r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1900,7 +1900,7 @@
         <!--Real Estate Detail Part Three View Controller-->
         <scene sceneID="duJ-pl-aQo">
             <objects>
-                <viewController id="2ML-tS-4EU" customClass="RealEstateDetailPartThreeViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RealEstateDetailPartThreeViewController" id="2ML-tS-4EU" customClass="RealEstateDetailPartThreeViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="raI-bA-Len">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2032,7 +2032,7 @@
         <!--Real Estate Detail Part Four View Controller-->
         <scene sceneID="Loa-BM-658">
             <objects>
-                <viewController id="a0Z-3T-U36" customClass="RealEstateDetailPartFourViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RealEstateDetailPartFourViewController" id="a0Z-3T-U36" customClass="RealEstateDetailPartFourViewController" customModule="CustomerList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gGC-x8-sO2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
