@@ -11,7 +11,16 @@ import CoreData
 
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 class InsertSellerContactInformationViewController: UIViewController {
-
+    
+    @IBOutlet weak var phoneLineNumberTextField: UITextField!
+    @IBOutlet weak var firstMobileNumberTextField: UITextField!
+    @IBOutlet weak var secondMobileNumberTextField: UITextField!
+    @IBOutlet weak var watsNumberTestField: UITextField!
+    @IBOutlet weak var firstEmailAddressTextField: UITextField!
+    @IBOutlet weak var secondEmailAddressTextField: UITextField!
+    @IBOutlet weak var firstAddressLineTextField: UITextField!
+    @IBOutlet weak var secondAddressLineTextField: UITextField!
+    
     var sellerName: String = ""
     var sellerNationalityy = ""
     var birthdayDate: Date = Date()
@@ -48,7 +57,7 @@ class InsertSellerContactInformationViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func showData(_ sender: Any) {
-        print(" Name: \(self.sellerName) \n Nationality: \(self.sellerNationalityy) \n birthday: \(self.birthdayDate) \n Gender: \(self.sellerGender)")
+    @IBAction func createSellerWasPressed(_ sender: Any) {
     }
+    
 }

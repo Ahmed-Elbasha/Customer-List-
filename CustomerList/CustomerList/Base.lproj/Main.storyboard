@@ -481,6 +481,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5n-fR-O50">
                                         <rect key="frame" x="324" y="17" width="35" height="30"/>
                                         <state key="normal" title="اضافة"/>
+                                        <connections>
+                                            <action selector="createSellerWasPressed:" destination="siH-rR-aOd" eventType="touchUpInside" id="EQo-q3-viU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -523,7 +526,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9w1-QH-gpU">
                                         <rect key="frame" x="0.0" y="46" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVY-vM-HQU">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVY-vM-HQU">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Ibf-eb-Wlk"/>
@@ -544,7 +547,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eEP-F9-gHs">
                                         <rect key="frame" x="0.0" y="92" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x62-4D-Z6d">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x62-4D-Z6d">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="AGD-XV-aXn"/>
@@ -565,7 +568,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nTo-r7-ypX">
                                         <rect key="frame" x="0.0" y="138" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXh-qW-L8c">
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXh-qW-L8c">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="RTk-xd-paW"/>
@@ -586,7 +589,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tzv-lk-QIC">
                                         <rect key="frame" x="0.0" y="184" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNV-NJ-9W4">
+                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNV-NJ-9W4">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Dbm-b6-kce"/>
@@ -607,7 +610,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="drC-Ja-3JI">
                                         <rect key="frame" x="0.0" y="230" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-XR-NcH">
+                                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-XR-NcH">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="Qrj-eV-Cxl"/>
@@ -628,7 +631,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nZo-ta-ME1">
                                         <rect key="frame" x="0.0" y="276" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9be-wB-aeA">
+                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9be-wB-aeA">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="Mdz-zi-wB9"/>
@@ -649,7 +652,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="mhu-Tl-8gr">
                                         <rect key="frame" x="0.0" y="322" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-Aw-CB4">
+                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-Aw-CB4">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="4Fa-yy-VT9"/>
@@ -669,27 +672,28 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk1-Wh-3oi">
-                                <rect key="frame" x="150" y="513" width="74" height="30"/>
-                                <state key="normal" title="Show Data"/>
-                                <connections>
-                                    <action selector="showData:" destination="siH-rR-aOd" eventType="touchUpInside" id="T8f-lm-aiL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="H2I-50-99V" firstAttribute="top" secondItem="6L3-ou-ca8" secondAttribute="bottom" constant="16" id="3Py-bE-D5A"/>
-                            <constraint firstItem="yk1-Wh-3oi" firstAttribute="centerX" secondItem="M06-4N-9pT" secondAttribute="centerX" id="9eN-oQ-fKi"/>
                             <constraint firstItem="6L3-ou-ca8" firstAttribute="leading" secondItem="zOo-Jj-eWI" secondAttribute="leading" id="CL9-8Y-ORU"/>
                             <constraint firstItem="6L3-ou-ca8" firstAttribute="top" secondItem="zOo-Jj-eWI" secondAttribute="top" id="ENV-90-SvN"/>
                             <constraint firstItem="6L3-ou-ca8" firstAttribute="trailing" secondItem="zOo-Jj-eWI" secondAttribute="trailing" id="MRb-C5-ew0"/>
                             <constraint firstItem="zOo-Jj-eWI" firstAttribute="trailing" secondItem="H2I-50-99V" secondAttribute="trailing" constant="16" id="PBX-eY-XCj"/>
-                            <constraint firstItem="yk1-Wh-3oi" firstAttribute="top" secondItem="H2I-50-99V" secondAttribute="bottom" constant="61" id="SzI-XQ-6oU"/>
                             <constraint firstItem="H2I-50-99V" firstAttribute="leading" secondItem="zOo-Jj-eWI" secondAttribute="leading" constant="16" id="nyq-mU-ctm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zOo-Jj-eWI"/>
                     </view>
+                    <connections>
+                        <outlet property="firstAddressLineTextField" destination="9be-wB-aeA" id="P2p-TJ-Deg"/>
+                        <outlet property="firstEmailAddressTextField" destination="lNV-NJ-9W4" id="nq8-Xo-Bax"/>
+                        <outlet property="firstMobileNumberTextField" destination="cVY-vM-HQU" id="Jrj-uK-Fy6"/>
+                        <outlet property="phoneLineNumberTextField" destination="Ep6-Qr-U7D" id="LJ3-QA-3OQ"/>
+                        <outlet property="secondAddressLineTextField" destination="VPr-Aw-CB4" id="g2n-b8-p0I"/>
+                        <outlet property="secondEmailAddressTextField" destination="7Pz-XR-NcH" id="uDU-3Y-4Uh"/>
+                        <outlet property="secondMobileNumberTextField" destination="x62-4D-Z6d" id="Vfc-Lv-0sZ"/>
+                        <outlet property="watsNumberTestField" destination="HXh-qW-L8c" id="aqR-Iw-SBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7i-MG-PZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
