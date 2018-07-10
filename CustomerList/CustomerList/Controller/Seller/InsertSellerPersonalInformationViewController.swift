@@ -76,10 +76,6 @@ class InsertSellerPersonalInformationViewController: UIViewController, UITextFie
         textField.resignFirstResponder()
     }
     
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        return true
-    }
-    
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

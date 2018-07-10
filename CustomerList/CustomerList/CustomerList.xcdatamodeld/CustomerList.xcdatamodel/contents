@@ -50,17 +50,17 @@
         <attribute name="emailAddress1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="emailAddress2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="mobileNumber1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="mobileNumber2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mobileNumber2" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sellerID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="sellerName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="telephoneNumber" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="watsapNumber1" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="watsapNumber2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephoneNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="watsapNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Apartment" positionX="-54" positionY="135" width="128" height="390"/>
         <element name="Buyer" positionX="-63" positionY="-18" width="128" height="285"/>
         <element name="Seller" positionX="-54" positionY="108" width="128" height="240"/>
-        <element name="Apartment" positionX="-54" positionY="135" width="128" height="390"/>
     </elements>
 </model>
