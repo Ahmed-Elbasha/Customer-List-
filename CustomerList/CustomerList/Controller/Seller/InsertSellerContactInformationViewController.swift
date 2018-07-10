@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
 class InsertSellerContactInformationViewController: UIViewController {
 
+    var sellerName: String = ""
+    var sellerNationalityy = ""
+    var birthdayDate: Date = Date()
+    var sellerGender: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +27,12 @@ class InsertSellerContactInformationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func initData(sellerName: String, sellerNationality: String, birthdayDate: Date, gender: String) {
+        self.sellerName = sellerName
+        self.sellerNationalityy = sellerNationality
+        self.sellerGender = gender
+        self.birthdayDate = birthdayDate
+    }
 
     /*
     // MARK: - Navigation
@@ -36,4 +48,7 @@ class InsertSellerContactInformationViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func showData(_ sender: Any) {
+        print(" Name: \(self.sellerName) \n Nationality: \(self.sellerNationalityy) \n birthday: \(self.birthdayDate) \n Gender: \(self.sellerGender)")
+    }
 }

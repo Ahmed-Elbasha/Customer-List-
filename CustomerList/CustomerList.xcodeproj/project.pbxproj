@@ -28,6 +28,7 @@
 		7E6A971A20C5603700A383BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6A971820C5603700A383BA /* LaunchScreen.storyboard */; };
 		7E6A972520C5603E00A383BA /* CustomerListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972420C5603E00A383BA /* CustomerListTests.swift */; };
 		7E6A973020C5603E00A383BA /* CustomerListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */; };
+		7E6D29B420F29C9F00FE0D45 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D29B320F29C9F00FE0D45 /* Color.swift */; };
 		7E83501020EC31A600A40188 /* contractType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83500F20EC31A600A40188 /* contractType.swift */; };
 		7E83501220EC327900A40188 /* finishingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501120EC327900A40188 /* finishingType.swift */; };
 		7E83501420EC387B00A40188 /* InsertSellerContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */; };
@@ -80,6 +81,7 @@
 		7E6A972B20C5603E00A383BA /* CustomerListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomerListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListUITests.swift; sourceTree = "<group>"; };
 		7E6A973120C5603E00A383BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6D29B320F29C9F00FE0D45 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		7E83500F20EC31A600A40188 /* contractType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractType.swift; sourceTree = "<group>"; };
 		7E83501120EC327900A40188 /* finishingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishingType.swift; sourceTree = "<group>"; };
 		7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerContactInformationViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		7E6A970B20C5602700A383BA /* CustomerList */ = {
 			isa = PBXGroup;
 			children = (
+				7E6D29B220F29C7900FE0D45 /* Custom Classes */,
 				7E4443AA20CBFCD70028E64D /* Extension */,
 				7E4443A920CBFCC80028E64D /* Enum */,
 				7E4443A820CBFCB60028E64D /* View */,
@@ -236,6 +239,14 @@
 				7E6A973120C5603E00A383BA /* Info.plist */,
 			);
 			path = CustomerListUITests;
+			sourceTree = "<group>";
+		};
+		7E6D29B220F29C7900FE0D45 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E6D29B320F29C9F00FE0D45 /* Color.swift */,
+			);
+			path = "Custom Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +382,7 @@
 			files = (
 				7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */,
 				7E58CD3E20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift in Sources */,
+				7E6D29B420F29C9F00FE0D45 /* Color.swift in Sources */,
 				7E58CD3C20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift in Sources */,
 				7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */,
 				7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */,
