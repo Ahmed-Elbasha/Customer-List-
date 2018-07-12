@@ -21,7 +21,7 @@ class InsertSellerPersonalInformationViewController: UIViewController, UITextFie
     var sellerNationality: String = ""
     var genderInString: String = ""
     var textfieldTag: Int = 0
-    var birthdayDate: Date!
+    var birthdayDate: String = ""
     
     // Color Objects
     var lightMagenta: UIColor = UIColor(red: CGFloat(0.98), green: CGFloat(0.64), blue: CGFloat(0.9), alpha: CGFloat(0.6))
@@ -47,17 +47,8 @@ class InsertSellerPersonalInformationViewController: UIViewController, UITextFie
     }
     
     func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        textfieldTag = textField.tag
-        if (textfieldTag == 0 || textfieldTag == 1) {
-            if (textField.text == "") {
-                return false
-            } else {
-                textField.clearButtonMode = .whileEditing
-                return true
-            }
-        } else {
-            return false
-        }
+        textField.clearButtonMode = .whileEditing
+        return (textField.text != "")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -66,13 +57,6 @@ class InsertSellerPersonalInformationViewController: UIViewController, UITextFie
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textfieldTag = textField.tag
-        if textfieldTag == 0 && (textField.text?.isEmpty)! != true{
-            sellerName = textField.text!
-        }
-        if textfieldTag == 1 && textField.text?.isEmpty != true{
-            sellerNationality = textField.text!
-        }
         textField.resignFirstResponder()
     }
     
@@ -90,7 +74,6 @@ class InsertSellerPersonalInformationViewController: UIViewController, UITextFie
     
     func makeFemaleSelected() {
         femaleButton.backgroundColor = magenta
-        genderInString = Gender.female.rawValue
         makeMaleNotSelected()
     }
     
@@ -100,7 +83,6 @@ class InsertSellerPersonalInformationViewController: UIViewController, UITextFie
     
     func makeMaleSelected() {
         maleButton.backgroundColor = cyan
-        genderInString = Gender.male.rawValue
         makeFemaleNotSelected()
     }
     
@@ -109,29 +91,47 @@ class InsertSellerPersonalInformationViewController: UIViewController, UITextFie
     }
     
     @IBAction func nextButtonWasPressed(_ sender: Any) {
+        self.setClassValues()
+        
         if !isDataValid() {
             let alert: UIAlertController = UIAlertController(title: "خطآ", message: "يبدو انه  هناك خطآ حدث اثناء ادخال البيانات رجائا قم بمراجعة بياناتك ", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "حسنا", style: .cancel, handler: { (alert) in
-                return
-            }))
+            alert.addAction(UIAlertAction(title: "حسنا", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else {
-            let insertSellerContactInformationVC = storyboard?.instantiateViewController(withIdentifier: "InsertSellerContactInformationViewController") as! InsertSellerContactInformationViewController
-            insertSellerContactInformationVC.initData(sellerName: self.sellerName, sellerNationality: self.sellerNationality, birthdayDate: birthdayDate, gender: genderInString)
-            self.present(insertSellerContactInformationVC, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "MoveToInsertSellerContactInformationViewController", sender: Any?.self)
         }
     }
     
+//    @IBAction func birthdateDatePickerValueChanged(_ sender: Any) {
+//        birthdayDate = birthDayDatePicker.date
+//    }
+    
     func isDataValid() -> Bool {
-        if birthdayDate != nil && sellerName.isEmpty != true && sellerNationality.isEmpty != true && genderInString.isEmpty != true {
+        if sellerName != "" && sellerNationality != "" && birthdayDate  == birthDayDatePicker.description {
             return true
         } else {
             return false
         }
     }
     
-    @IBAction func birthdateDatePickerValueChanged(_ sender: Any) {
-        birthdayDate = birthDayDatePicker.date
+    func setClassValues() {
+        sellerName = sellerNameTextField.text!
+        sellerNationality = nationalityTextField.text!
+        
+        if maleButton.backgroundColor == cyan {
+            genderInString = Gender.male.rawValue
+        } else if femaleButton.backgroundColor == magenta {
+            genderInString = Gender.female.rawValue
+        }
+        
+        birthdayDate = birthDayDatePicker.description
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MoveToInsertSellerContactInformationViewController" {
+            let insertSellerContactInformationVC = segue.destination as! InsertSellerContactInformationViewController
+            insertSellerContactInformationVC.initData(sellerName: self.sellerName, sellerNationality: self.sellerNationality, birthdayDate: birthdayDate, gender: genderInString)
+        }
     }
     
 }

@@ -24,7 +24,7 @@ class InsertSellerContactInformationViewController: UIViewController, UITextFiel
     
     var sellerName: String = ""
     var sellerNationalityy = ""
-    var birthdayDate: Date = Date()
+    var birthdayDate: String = ""
     var sellerGender: String = ""
     var phoneLineNumber: Int32 = 0
     var firstMobileNumber: Int32 = 0
@@ -46,7 +46,7 @@ class InsertSellerContactInformationViewController: UIViewController, UITextFiel
         // Dispose of any resources that can be recreated.
     }
     
-    func initData(sellerName: String, sellerNationality: String, birthdayDate: Date, gender: String) {
+    func initData(sellerName: String, sellerNationality: String, birthdayDate: String, gender: String) {
         self.sellerName = sellerName
         self.sellerNationalityy = sellerNationality
         self.sellerGender = gender
@@ -178,12 +178,12 @@ class InsertSellerContactInformationViewController: UIViewController, UITextFiel
     }
     
     func saveSeller(_ completion: (_ completed: Bool) -> ()) {
-        guard let managedContext: NSManagedObjectContext? = appDelegate.persistentContainer.viewContext else {return}
+        let managedContext: NSManagedObjectContext? = appDelegate.persistentContainer.viewContext
         let seller = Seller(context: managedContext!)
         
         seller.sellerName = self.sellerName
         seller.nationality = self.sellerNationalityy
-        seller.birthdate = self.birthdayDate
+        seller.birthdate = self.birthdayDate.description
         seller.gender = self.sellerGender
         seller.telephoneNumber = self.phoneLineNumber
         seller.mobileNumber1 = self.firstMobileNumber

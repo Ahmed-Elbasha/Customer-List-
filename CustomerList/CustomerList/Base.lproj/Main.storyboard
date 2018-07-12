@@ -309,6 +309,7 @@
                                         <state key="normal" title="التالي"/>
                                         <connections>
                                             <action selector="nextButtonWasPressed:" destination="zVv-fy-tdB" eventType="touchUpInside" id="yFI-wa-HTH"/>
+                                            <segue destination="siH-rR-aOd" kind="showDetail" identifier="MoveToInsertSellerContactInformationViewController" id="gTW-dO-9vM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -386,9 +387,6 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="550496621.58292699">
                                                     <!--2018-06-12 11:43:41 +0000-->
                                                 </date>
-                                                <connections>
-                                                    <action selector="birthdateDatePickerValueChanged:" destination="zVv-fy-tdB" eventType="valueChanged" id="bOG-kQ-i4Y"/>
-                                                </connections>
                                             </datePicker>
                                         </subviews>
                                     </stackView>
