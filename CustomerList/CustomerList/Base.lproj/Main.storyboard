@@ -90,12 +90,325 @@
                                 <rect key="frame" x="0.0" y="84" width="375" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyerTableViewCell" rowHeight="344" id="oXP-zo-Up6">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="344"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyerTableViewCell" rowHeight="290" id="oXP-zo-Up6">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="290"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oXP-zo-Up6" id="s8M-1R-owV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="343.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="289.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b7m-ro-fPa">
+                                                    <rect key="frame" x="16" y="16" width="343" height="257.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="snv-ye-ZUF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المشتري:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="0F8-3T-Kyr">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آسم المشتري هنا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="7nB-xU-Yph">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="1dN-Te-P3y"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ctb-hb-4YX">
+                                                            <rect key="frame" x="0.0" y="18" width="343" height="7.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنسية:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="gBw-l0-iWH">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="7.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Bep-r0-pjq">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="7.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="BkY-Ar-bV4"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HSA-aa-YXC">
+                                                            <rect key="frame" x="0.0" y="35.5" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الميلاد:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="yTO-Mb-pQN">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا تاريخ الميلاد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="E7d-wq-9YY">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="IBz-3k-3J0"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-55-Kfe">
+                                                            <rect key="frame" x="0.0" y="53.5" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنس:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="r3X-Wd-8Je">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا جنس المشتري" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ZX7-zs-1qF">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="haU-WB-bCS"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="uy4-lU-qH9">
+                                                            <rect key="frame" x="0.0" y="71.5" width="343" height="7.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عدد افراد الاسرة:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="KV8-YF-VFm">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="7.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا عدد افراد الاسرة:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="drL-kD-oqr">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="7.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="wbo-dr-5e8"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EWM-Os-Q62">
+                                                            <rect key="frame" x="0.0" y="89" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عدد الاولاد:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="tYX-PA-Zg7">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا عدد الاولاد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="t3z-P0-JX4">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="ngn-Wh-FOH"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="iLb-UA-axB">
+                                                            <rect key="frame" x="0.0" y="107" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحالة الاجتماعية:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="12p-6H-scO">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا الحالة الاجتماعية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-29-xKG">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="k6Q-e0-DUg"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YyD-XR-zld">
+                                                            <rect key="frame" x="0.0" y="125" width="343" height="7.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الارضي:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="l0L-Gc-ux8">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="7.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الارضي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Zkh-IJ-A3T">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="7.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="gnf-9h-rYn"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="suD-eV-VQn">
+                                                            <rect key="frame" x="0.0" y="142.5" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الموبايل:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-CI-hRx">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الموبايل" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="vWr-PW-0kf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="uFp-T8-m32"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aS2-gi-fV5">
+                                                            <rect key="frame" x="0.0" y="160.5" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الموبايل٢:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="X2E-vn-ntc">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الموبايل ٢" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="xYR-xi-CKU">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="srH-eF-HnG"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-BP-6CL">
+                                                            <rect key="frame" x="0.0" y="178.5" width="343" height="7.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الواتس:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="77X-It-6Jj">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="7.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الواتس" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="xei-uu-Ac0">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="7.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="dnw-91-7pM"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-tF-4h6">
+                                                            <rect key="frame" x="0.0" y="196" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الايميل:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="CPI-PL-PKS">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا الايميل " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="aLX-Z1-cUg">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="9gx-Oz-sdc"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EYG-Bu-KFb">
+                                                            <rect key="frame" x="0.0" y="214" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الايميل٢:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="EQg-X5-Eah">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا الايميل ٢" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="cxS-Iw-GYf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="JOJ-eR-zgk"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="b0z-Kq-YOj">
+                                                            <rect key="frame" x="0.0" y="232" width="343" height="7.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العنوان:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="3bm-DD-cjl">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="7.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا العنوان " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="z10-AM-MKj">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="7.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="gq9-iv-I30"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="wTX-tU-g1o">
+                                                            <rect key="frame" x="0.0" y="249.5" width="343" height="8"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العنوان٢:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="tQ2-fn-ITE">
+                                                                    <rect key="frame" x="224" y="0.0" width="119" height="8"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا العنوان " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="LPc-CC-EMU">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="8"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="220" id="Frt-Pg-n27"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="b7m-ro-fPa" secondAttribute="trailing" constant="16" id="AQm-Ve-Rew"/>
+                                                <constraint firstItem="b7m-ro-fPa" firstAttribute="leading" secondItem="s8M-1R-owV" secondAttribute="leading" constant="16" id="FpJ-oW-QM7"/>
+                                                <constraint firstAttribute="bottom" secondItem="b7m-ro-fPa" secondAttribute="bottom" constant="16" id="Xlq-sR-KyJ"/>
+                                                <constraint firstItem="b7m-ro-fPa" firstAttribute="top" secondItem="s8M-1R-owV" secondAttribute="top" constant="16" id="ZUE-N2-mnP"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -197,27 +510,27 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SellerTableViewCell" rowHeight="296" id="u6F-tq-gLr" customClass="SellerTableViewCell" customModule="CustomerList" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="296"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SellerTableViewCell" rowHeight="290" id="u6F-tq-gLr" customClass="SellerTableViewCell" customModule="CustomerList" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="290"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u6F-tq-gLr" id="Wbc-na-n9p">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="295.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="289.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xcx-hm-bf9">
-                                                            <rect key="frame" x="31" y="27" width="313" height="242"/>
+                                                            <rect key="frame" x="31" y="27" width="313" height="236"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kde-vL-hvd">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم البائع:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="HUB-BA-MVR">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آسم البائع هنا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="B9a-xl-etI">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="xtb-fU-RG7"/>
                                                                             </constraints>
@@ -228,16 +541,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YLq-0Y-x51">
-                                                                    <rect key="frame" x="0.0" y="21" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="20.5" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنسية:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="aib-po-TDR">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا الجنسية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="p16-yx-fPj">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="Gts-2J-d17"/>
                                                                             </constraints>
@@ -248,16 +561,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="v8b-04-fbU">
-                                                                    <rect key="frame" x="0.0" y="42" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="41" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الميلاد:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="IXq-nY-lJz">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا تاريخ الميلاد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-vl-7ia">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="6cW-ba-uDf"/>
                                                                             </constraints>
@@ -268,16 +581,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cVa-Cx-VyZ">
-                                                                    <rect key="frame" x="0.0" y="63" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="61.5" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الجنس:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="YYo-n5-Ag2">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا جنس البائع" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="tQm-Fb-iLj">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="K7o-63-dlU"/>
                                                                             </constraints>
@@ -288,16 +601,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3uY-4C-iO9">
-                                                                    <rect key="frame" x="0.0" y="84" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="82" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الآرضي:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="jcd-Rw-Gez">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الارضي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="xaL-so-sYp">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="MfC-RB-hl9"/>
                                                                             </constraints>
@@ -308,16 +621,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aeS-nN-DNm">
-                                                                    <rect key="frame" x="0.0" y="105" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="102.5" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الموبايل:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="lt0-Em-dh4">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الموبايل" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-Qr-g1l">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="exh-UN-JpL"/>
                                                                             </constraints>
@@ -328,16 +641,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YU9-iG-9sI">
-                                                                    <rect key="frame" x="0.0" y="126" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="123" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الموبايل٢:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="94J-Ek-XXL">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الموبايل ٢" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="2hz-Kf-ALS">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="Dhi-ey-Og8"/>
                                                                             </constraints>
@@ -348,16 +661,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xbp-H6-4gW">
-                                                                    <rect key="frame" x="0.0" y="147" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="143.5" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الواتس:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="APX-RY-He2">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا رقم الواتس" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="13v-uG-HCW">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="jvZ-h8-4GA"/>
                                                                             </constraints>
@@ -368,16 +681,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="UL4-Xp-Gm7">
-                                                                    <rect key="frame" x="0.0" y="168" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="164" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الايميل:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="grY-I1-xcM">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا الايميل" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-Nm-U8U">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="28t-TR-RTX"/>
                                                                             </constraints>
@@ -388,16 +701,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8Yc-sK-Bc3">
-                                                                    <rect key="frame" x="0.0" y="189" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="184.5" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الايميل٢:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="iUy-vW-jGx">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا الايميل ٢" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-eX-v62">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="Qse-fU-gT8"/>
                                                                             </constraints>
@@ -408,16 +721,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bBp-c7-pic">
-                                                                    <rect key="frame" x="0.0" y="210" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="205" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العنوان:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="m9L-Za-9Lg">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا العنوان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="myv-YU-5fA">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="eTb-pr-jyE"/>
                                                                             </constraints>
@@ -428,16 +741,16 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JGX-PU-7uP">
-                                                                    <rect key="frame" x="0.0" y="231" width="313" height="11"/>
+                                                                    <rect key="frame" x="0.0" y="225.5" width="313" height="10.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العنوان٢:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="1hJ-PT-sAH">
-                                                                            <rect key="frame" x="224" y="0.0" width="89" height="11"/>
+                                                                            <rect key="frame" x="224" y="0.0" width="89" height="10.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا العنوان ٢" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="4pv-GJ-TZx">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="11"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="10.5"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="LMu-F3-nes"/>
                                                                             </constraints>
