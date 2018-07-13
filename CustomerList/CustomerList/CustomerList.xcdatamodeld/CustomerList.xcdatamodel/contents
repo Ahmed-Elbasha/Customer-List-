@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Apartment" representedClassName="Apartment" syncable="YES" codeGenerationType="class">
-        <attribute name="apartmentID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="apartmentID" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="apartmentType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="buildingArea" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -29,7 +29,7 @@
         <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="birthdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="buyerID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="buyerID" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="buyerName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="emailAddress1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="emailAddress2" optional="YES" attributeType="String" syncable="YES"/>
@@ -53,7 +53,7 @@
         <attribute name="mobileNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="mobileNumber2" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="sellerID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sellerID" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="sellerName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telephoneNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="watsapNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
