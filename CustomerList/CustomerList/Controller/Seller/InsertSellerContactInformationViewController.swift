@@ -34,7 +34,7 @@ class InsertSellerContactInformationViewController: UIViewController, UITextFiel
     var secondEmailAddress: String = ""
     var firstAddressLine: String = ""
     var secondAddressLine: String = ""
-    var textfieldTag: Int32 = 0
+    var textfieldTag: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -221,4 +221,15 @@ class InsertSellerContactInformationViewController: UIViewController, UITextFiel
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.resignFirstResponder()
     }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textfieldTag = textField.tag
+        
+        if textfieldTag == 0 || textfieldTag == 1 || textfieldTag == 2 || textfieldTag == 3 {
+            if textField.text == "" {
+                textField.text = "0"
+            }
+        }
+    }
+    
 }
