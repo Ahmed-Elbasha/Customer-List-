@@ -40,6 +40,13 @@ class InsertSellerContactInformationViewController: UIViewController, UITextFiel
         super.viewDidLoad()
         self.setDelegateForTextFields()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        phoneLineNumberTextField.text = "0"
+        firstMobileNumberTextField.text = "0"
+        secondMobileNumberTextField.text = "0"
+        whatsNumberTestField.text = "0"
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -232,4 +239,14 @@ class InsertSellerContactInformationViewController: UIViewController, UITextFiel
         }
     }
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        textfieldTag = textField.tag
+        
+        if textfieldTag == 0 || textfieldTag == 1 || textfieldTag == 2 || textfieldTag == 3 {
+            if textField.text == "" {
+                textField.text = "0"
+            }
+        }
+        return true
+    }
 }
