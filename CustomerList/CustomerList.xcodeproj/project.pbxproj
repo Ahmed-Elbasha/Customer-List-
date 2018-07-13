@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3A7D7620F8F504005F62D5 /* SellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A7D7520F8F504005F62D5 /* SellerTableViewCell.swift */; };
+		7E3A7D7820F8F51E005F62D5 /* BuyerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A7D7720F8F51E005F62D5 /* BuyerTableViewCell.swift */; };
+		7E3A7D7A20F8F535005F62D5 /* RealEstateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3A7D7920F8F535005F62D5 /* RealEstateTableViewCell.swift */; };
 		7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443A320CBEF750028E64D /* SellerViewController.swift */; };
 		7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443A520CBEF980028E64D /* BuyerViewController.swift */; };
 		7E4443AC20CBFE090028E64D /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4443AB20CBFE090028E64D /* Gender.swift */; };
@@ -54,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E3A7D7520F8F504005F62D5 /* SellerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerTableViewCell.swift; sourceTree = "<group>"; };
+		7E3A7D7720F8F51E005F62D5 /* BuyerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerTableViewCell.swift; sourceTree = "<group>"; };
+		7E3A7D7920F8F535005F62D5 /* RealEstateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateTableViewCell.swift; sourceTree = "<group>"; };
 		7E4443A320CBEF750028E64D /* SellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerViewController.swift; sourceTree = "<group>"; };
 		7E4443A520CBEF980028E64D /* BuyerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerViewController.swift; sourceTree = "<group>"; };
 		7E4443AB20CBFE090028E64D /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 		7E4443A820CBFCB60028E64D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7E3A7D7520F8F504005F62D5 /* SellerTableViewCell.swift */,
+				7E3A7D7720F8F51E005F62D5 /* BuyerTableViewCell.swift */,
+				7E3A7D7920F8F535005F62D5 /* RealEstateTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,7 +402,10 @@
 				7E4443AE20CBFEA30028E64D /* NumberOfKids.swift in Sources */,
 				7E83501020EC31A600A40188 /* contractType.swift in Sources */,
 				7E58CD3820ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift in Sources */,
+				7E3A7D7820F8F51E005F62D5 /* BuyerTableViewCell.swift in Sources */,
+				7E3A7D7A20F8F535005F62D5 /* RealEstateTableViewCell.swift in Sources */,
 				7E83501620EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift in Sources */,
+				7E3A7D7620F8F504005F62D5 /* SellerTableViewCell.swift in Sources */,
 				7E83501220EC327900A40188 /* finishingType.swift in Sources */,
 				7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */,
 				7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */,
