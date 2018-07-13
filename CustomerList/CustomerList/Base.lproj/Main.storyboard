@@ -331,7 +331,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="0md-5j-9IB">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bk-JA-iUr">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seller Name Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bk-JA-iUr">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="7lw-54-07f"/>
@@ -358,7 +358,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="moj-h7-7mf">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nationality Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="moj-h7-7mf">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="j4w-de-mu0"/>
@@ -503,7 +503,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-4t-mim">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ep6-Qr-U7D">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Line Number Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ep6-Qr-U7D">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="EwO-z5-oN5"/>
@@ -524,7 +524,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9w1-QH-gpU">
                                         <rect key="frame" x="0.0" y="46" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVY-vM-HQU">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number 1 Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVY-vM-HQU">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Ibf-eb-Wlk"/>
@@ -545,7 +545,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="eEP-F9-gHs">
                                         <rect key="frame" x="0.0" y="92" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x62-4D-Z6d">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number 2 Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x62-4D-Z6d">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="AGD-XV-aXn"/>
@@ -566,7 +566,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nTo-r7-ypX">
                                         <rect key="frame" x="0.0" y="138" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXh-qW-L8c">
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Whatsapp Number Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXh-qW-L8c">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="RTk-xd-paW"/>
@@ -587,7 +587,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="tzv-lk-QIC">
                                         <rect key="frame" x="0.0" y="184" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNV-NJ-9W4">
+                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address 1 Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNV-NJ-9W4">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Dbm-b6-kce"/>
@@ -608,7 +608,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="drC-Ja-3JI">
                                         <rect key="frame" x="0.0" y="230" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-XR-NcH">
+                                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address 2 Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-XR-NcH">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="Qrj-eV-Cxl"/>
@@ -629,7 +629,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nZo-ta-ME1">
                                         <rect key="frame" x="0.0" y="276" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9be-wB-aeA">
+                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Line 1 Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9be-wB-aeA">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="Mdz-zi-wB9"/>
@@ -650,7 +650,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="mhu-Tl-8gr">
                                         <rect key="frame" x="0.0" y="322" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-Aw-CB4">
+                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address Line 2 Goes Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-Aw-CB4">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="4Fa-yy-VT9"/>
