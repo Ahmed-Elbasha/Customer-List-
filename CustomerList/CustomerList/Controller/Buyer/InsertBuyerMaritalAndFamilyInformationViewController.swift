@@ -9,11 +9,19 @@
 import UIKit
 
 class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
+    
+    var buyerName: String = ""
+    var buyerNationality: String = ""
+    var birthdate: String = ""
+    var gender: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +29,13 @@ class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func initWithData(name: String, nationality: String, birthdate: String, gender: String) {
+        self.buyerName = name
+        self.buyerNationality = nationality
+        self.birthdate = birthdate
+        self.gender = gender
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -32,8 +46,8 @@ class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
     }
     */
 
-    
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
 }
