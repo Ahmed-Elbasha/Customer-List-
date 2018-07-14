@@ -7,10 +7,9 @@
         <attribute name="buildingArea" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="buildingNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="compoundName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="constructionYear" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="constructionYear" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="contractType" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="customerName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="deliveryYear" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="deliveryYear" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="finishingType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="floorNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="gardenArea" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -22,6 +21,7 @@
         <attribute name="numberOfMasterRooms" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="numberOfPiecesOfReception" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="numberOfRooms" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ownerName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="stageNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="unitNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="view" optional="YES" attributeType="String" syncable="YES"/>

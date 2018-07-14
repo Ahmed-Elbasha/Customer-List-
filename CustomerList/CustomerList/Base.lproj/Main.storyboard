@@ -1821,6 +1821,31 @@
                                                 <constraint firstItem="JOi-Mi-ob3" firstAttribute="top" secondItem="UFn-to-nvi" secondAttribute="top" constant="16" id="kIG-cp-KTM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="apartmentTypeLabel" destination="qcd-m0-qIU" id="lCT-j7-fIh"/>
+                                            <outlet property="areaNameLabel" destination="xwt-ff-JAz" id="1ng-rY-cFT"/>
+                                            <outlet property="buildingAreaLabel" destination="b4A-ab-Nm8" id="XZQ-DK-sFr"/>
+                                            <outlet property="buildingNumberLabel" destination="lMy-6p-BBw" id="NTj-rk-Yih"/>
+                                            <outlet property="compoundNameLabel" destination="xzr-38-Aop" id="hUF-kj-dxm"/>
+                                            <outlet property="constructionDateLabel" destination="EaO-WD-Zbd" id="Ytp-pa-zjm"/>
+                                            <outlet property="contractTypeLabel" destination="A4w-SR-gI2" id="Pyc-Tj-y95"/>
+                                            <outlet property="deliveryDateLabel" destination="NS5-EN-dXG" id="iWh-Y7-x42"/>
+                                            <outlet property="finishingTypeLabel" destination="7Vr-zg-u2T" id="P5E-Vc-Mrg"/>
+                                            <outlet property="floorNumberLabel" destination="BM7-Mm-iMP" id="RY2-QU-87R"/>
+                                            <outlet property="gardenAreaLabel" destination="H7z-j4-BB3" id="PQm-Mi-TSe"/>
+                                            <outlet property="landAreaLabel" destination="Gb2-0p-YIw" id="WHx-g7-wav"/>
+                                            <outlet property="numberOfBalconiesLabel" destination="MiZ-0f-CZ1" id="3CO-0j-ZdN"/>
+                                            <outlet property="numberOfBathroomsLabel" destination="fGW-HM-Jaf" id="JIY-qt-dJL"/>
+                                            <outlet property="numberOfDressingRoomsLabel" destination="dHQ-UW-8io" id="nJ3-2Y-dfF"/>
+                                            <outlet property="numberOfElevatorsLabel" destination="gRf-0d-AFi" id="kEB-UP-Rxy"/>
+                                            <outlet property="numberOfMasterRoomsLabel" destination="0IJ-VB-olc" id="ezW-oT-64s"/>
+                                            <outlet property="numberOfPiecesOfReceptionsLabel" destination="8ol-ES-w4Y" id="diG-6A-jYx"/>
+                                            <outlet property="numberOfRoomsLabel" destination="6aJ-ah-1A4" id="HAd-ck-Q3z"/>
+                                            <outlet property="ownerNameLabel" destination="R4I-6J-gxv" id="KSz-k3-NB0"/>
+                                            <outlet property="stageNumberLabel" destination="rKj-e4-nbV" id="nED-8o-gij"/>
+                                            <outlet property="unitNumberLabel" destination="dkR-jB-ZGH" id="YB8-u6-gAJ"/>
+                                            <outlet property="viewLabel" destination="GvE-vM-6KN" id="0Xv-7x-HuW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
