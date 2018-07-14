@@ -410,6 +410,23 @@
                                                 <constraint firstItem="b7m-ro-fPa" firstAttribute="top" secondItem="s8M-1R-owV" secondAttribute="top" constant="16" id="ZUE-N2-mnP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buyerBirthDateLabel" destination="E7d-wq-9YY" id="bHb-1T-mHg"/>
+                                            <outlet property="buyerGenderLabel" destination="ZX7-zs-1qF" id="5fA-Wc-A9P"/>
+                                            <outlet property="buyerNameLabel" destination="7nB-xU-Yph" id="GGB-A5-CtJ"/>
+                                            <outlet property="buyerNationalityLabel" destination="Bep-r0-pjq" id="srS-MZ-48g"/>
+                                            <outlet property="firstAddressLineLabel" destination="z10-AM-MKj" id="aHC-xP-EIB"/>
+                                            <outlet property="firstEmailAddressLabel" destination="aLX-Z1-cUg" id="sHh-uy-nzU"/>
+                                            <outlet property="firstMobileNumberLabel" destination="vWr-PW-0kf" id="xqL-70-bfb"/>
+                                            <outlet property="maritalStatusLabel" destination="uxG-29-xKG" id="ibK-LI-RHT"/>
+                                            <outlet property="numberOfFamilyMembersLabel" destination="drL-kD-oqr" id="t3R-7R-qcf"/>
+                                            <outlet property="numberOfKidsLabel" destination="t3z-P0-JX4" id="yDI-ib-KXa"/>
+                                            <outlet property="phoneLineNumberLabel" destination="Zkh-IJ-A3T" id="OEm-hR-uQY"/>
+                                            <outlet property="secondAddressLineLabel" destination="LPc-CC-EMU" id="CBg-mn-ANA"/>
+                                            <outlet property="secondEmailAddressLabel" destination="cxS-Iw-GYf" id="mrJ-aN-nWc"/>
+                                            <outlet property="secondMobileNumberLabel" destination="xYR-xi-CKU" id="mmh-dN-jxF"/>
+                                            <outlet property="whatsNumberLabel" destination="xei-uu-Ac0" id="C9c-bq-nRl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
