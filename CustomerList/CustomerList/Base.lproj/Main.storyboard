@@ -776,6 +776,20 @@
                                                 <constraint firstItem="xcx-hm-bf9" firstAttribute="leading" secondItem="Wbc-na-n9p" secondAttribute="leadingMargin" constant="16" id="y2U-G4-IEq"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstAddressLineLabel" destination="myv-YU-5fA" id="OCe-UR-jG7"/>
+                                            <outlet property="firstEmailAddressLabel" destination="wOc-Nm-U8U" id="gMd-an-S9O"/>
+                                            <outlet property="firstMobileNumberLabel" destination="ewq-Qr-g1l" id="z1R-UH-Iw9"/>
+                                            <outlet property="phoneLineNumberLabel" destination="xaL-so-sYp" id="o2a-F5-m8b"/>
+                                            <outlet property="secondAddressLineLabel" destination="4pv-GJ-TZx" id="D2l-h3-WW9"/>
+                                            <outlet property="secondEmailAddressLabel" destination="hbh-eX-v62" id="M6J-7t-C2J"/>
+                                            <outlet property="secondMobileNumberLabel" destination="2hz-Kf-ALS" id="sfr-lp-Hu1"/>
+                                            <outlet property="sellerBirthdayLabel" destination="Tii-vl-7ia" id="SGK-IM-GAb"/>
+                                            <outlet property="sellerGenderLabel" destination="tQm-Fb-iLj" id="dKs-L5-s8H"/>
+                                            <outlet property="sellerNameLabel" destination="B9a-xl-etI" id="De7-rD-PNu"/>
+                                            <outlet property="sellerNationalityLabel" destination="p16-yx-fPj" id="BgM-cJ-ZnJ"/>
+                                            <outlet property="whatsNumberLabel" destination="13v-uG-HCW" id="Fad-Jj-UMw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1684,7 +1698,7 @@
                                                             <rect key="frame" x="0.0" y="280" width="343" height="6"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هنا نوع الوحدة " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="V1g-Bk-B6s">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="6"/>
+                                                                    <rect key="frame" x="123" y="0.0" width="220" height="6"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="220" id="qu2-L3-zlb"/>
                                                                     </constraints>
@@ -1693,7 +1707,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نوع الوحدة:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-m0-qIU">
-                                                                    <rect key="frame" x="224" y="0.0" width="119" height="6"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="119" height="6"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>

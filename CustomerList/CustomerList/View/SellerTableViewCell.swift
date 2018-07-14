@@ -10,6 +10,19 @@ import UIKit
 
 class SellerTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var sellerNameLabel: UILabel!
+    @IBOutlet weak var sellerNationalityLabel: UILabel!
+    @IBOutlet weak var sellerBirthdayLabel: UILabel!
+    @IBOutlet weak var sellerGenderLabel: UILabel!
+    @IBOutlet weak var phoneLineNumberLabel: UILabel!
+    @IBOutlet weak var firstMobileNumberLabel: UILabel!
+    @IBOutlet weak var secondMobileNumberLabel: UILabel!
+    @IBOutlet weak var whatsNumberLabel: UILabel!
+    @IBOutlet weak var firstEmailAddressLabel: UILabel!
+    @IBOutlet weak var secondEmailAddressLabel: UILabel!
+    @IBOutlet weak var firstAddressLineLabel: UILabel!
+    @IBOutlet weak var secondAddressLineLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +34,19 @@ class SellerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configureCell(seller: Seller) {
+        sellerNameLabel.text = seller.sellerName
+        sellerNationalityLabel.text = seller.nationality
+        sellerBirthdayLabel.text = seller.birthdate
+        sellerGenderLabel.text = seller.gender
+        phoneLineNumberLabel.text = String(describing: seller.telephoneNumber)
+        firstMobileNumberLabel.text = String(describing: seller.mobileNumber1)
+        secondMobileNumberLabel.text = String(describing: seller.mobileNumber2)
+        whatsNumberLabel.text = String(describing: seller.watsapNumber1)
+        firstEmailAddressLabel.text = seller.emailAddress1
+        secondEmailAddressLabel.text = seller.emailAddress2
+        firstAddressLineLabel.text = seller.address1
+        secondAddressLineLabel.text = seller.address2
+    }
+    
 }
