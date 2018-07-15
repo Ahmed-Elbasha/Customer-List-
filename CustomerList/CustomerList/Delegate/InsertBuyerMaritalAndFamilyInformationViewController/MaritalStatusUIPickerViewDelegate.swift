@@ -16,16 +16,14 @@ extension InsertBuyerMaritalAndFamilyInformationViewController: UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 4
+        return maritalStatusArray.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if component == 0 {
-            
-        }
+        return maritalStatusArray[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        <#code#>
+        maritalStatus = maritalStatusArray[pickerView.selectedRow(inComponent: 0)]
     }
 }

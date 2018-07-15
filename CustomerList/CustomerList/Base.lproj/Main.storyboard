@@ -2366,6 +2366,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFw-hR-f7v">
+                                <rect key="frame" x="116" y="545" width="142" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Me Some Data"/>
+                                <connections>
+                                    <action selector="showMeSomeDataButtonPressed:" destination="WjC-Fb-azG" eventType="touchUpInside" id="4Io-k2-oxc"/>
+                                    <action selector="showMeSomeDataButtonPressed:" destination="M3B-Tg-oLY" eventType="touchUpInside" id="CJW-cW-tnv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2595,6 +2604,7 @@
                                         <rect key="frame" x="325" y="17" width="34" height="30"/>
                                         <state key="normal" title="التالي"/>
                                         <connections>
+                                            <action selector="nextButtonPressed:" destination="WjC-Fb-azG" eventType="touchUpInside" id="qjG-u3-jRb"/>
                                             <segue destination="M3B-Tg-oLY" kind="showDetail" identifier="MoveToInsertBuyerContactInformationViewController" id="xcM-PL-K2O"/>
                                         </connections>
                                     </button>
@@ -2675,6 +2685,14 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-KU-YqW">
+                                <rect key="frame" x="116" y="398" width="142" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Me Some Data"/>
+                                <connections>
+                                    <action selector="showMeSomeDataButtonPressed:" destination="WjC-Fb-azG" eventType="touchUpInside" id="JZx-2u-Awp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2687,6 +2705,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kAE-Fa-iP8"/>
                     </view>
+                    <connections>
+                        <outlet property="maritalStatusPickerView" destination="Oqc-ah-NKd" id="BXq-ju-C5z"/>
+                        <outlet property="numberOfFamilyMembersTextField" destination="nWs-ON-OaW" id="UcS-0U-eeU"/>
+                        <outlet property="numberOfKidsTextField" destination="QWe-bD-LUE" id="mZn-yx-gOf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1R-E5-aU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

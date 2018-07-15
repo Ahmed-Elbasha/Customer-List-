@@ -9,32 +9,37 @@
 import UIKit
 
 class InsertBuyerContactInformationViewController: UIViewController {
+    
+    var buyerName: String = ""
+    var buyerNationality: String = ""
+    var birthdate: String = ""
+    var gender: String = ""
+    var numberOfFamilyMembers: Int32 = 0
+    var numberOfKids: Int32 = 0
+    var maritalStatus: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func initWithData(name: String, nationality: String, birthdate: String, gender: String, numberOfFamilyMembers: Int32, numberOfKids: Int32, maritalStatus: String) {
+        self.buyerName = name
+        self.buyerNationality = nationality
+        self.birthdate = birthdate
+        self.gender = gender
+        self.numberOfFamilyMembers = numberOfFamilyMembers
+        self.numberOfKids = numberOfKids
+        self.maritalStatus = maritalStatus
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func showMeSomeDataButtonPressed(_ sender: Any) {
+        print(" Name: \(self.buyerName) \n Naionality: \(self.buyerNationality) \n Birthdate: \(self.birthdate) \n Gender: \(self.gender) \n Marital Status: \(self.maritalStatus) \n Number Of Family Members: \(self.numberOfFamilyMembers) \n Numer Of Kids: \(self.numberOfKids)")
     }
     
 }
