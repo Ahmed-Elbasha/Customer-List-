@@ -30,13 +30,15 @@
 		7E6A972520C5603E00A383BA /* CustomerListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972420C5603E00A383BA /* CustomerListTests.swift */; };
 		7E6A973020C5603E00A383BA /* CustomerListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */; };
 		7E6D29B420F29C9F00FE0D45 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D29B320F29C9F00FE0D45 /* Color.swift */; };
-		7E7FAC6C20FA7CE8003483FC /* MaritalStatusUIPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FAC6B20FA7CE8003483FC /* MaritalStatusUIPickerViewDelegate.swift */; };
+		7E7FAC6C20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FAC6B20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift */; };
 		7E83501020EC31A600A40188 /* contractType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83500F20EC31A600A40188 /* contractType.swift */; };
 		7E83501220EC327900A40188 /* finishingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501120EC327900A40188 /* finishingType.swift */; };
 		7E83501420EC387B00A40188 /* InsertSellerContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */; };
 		7E83501620EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */; };
-		7E94A67F20FB74E300A3A484 /* UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94A67E20FB74E300A3A484 /* UITextFieldDelegate.swift */; };
-		7E94A68320FB799500A3A484 /* CustomMethodsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94A68220FB799500A3A484 /* CustomMethodsExtension.swift */; };
+		7E94A67F20FB74E300A3A484 /* BuyerFamilyInfoUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94A67E20FB74E300A3A484 /* BuyerFamilyInfoUITextFieldDelegate.swift */; };
+		7E94A68320FB799500A3A484 /* InsertBuyerMaritalAndFamilyInformationViewControllerCustomMethodsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94A68220FB799500A3A484 /* InsertBuyerMaritalAndFamilyInformationViewControllerCustomMethodsExtension.swift */; };
+		7E94A68720FB838B00A3A484 /* InsertBuyerPersonalInformationViewControllerCustomMethodsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94A68620FB838B00A3A484 /* InsertBuyerPersonalInformationViewControllerCustomMethodsExtension.swift */; };
+		7E94A68D20FBF91E00A3A484 /* BuyerPersonalInfoUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E94A68C20FBF91E00A3A484 /* BuyerPersonalInfoUITextFieldDelegate.swift */; };
 		7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,13 +89,15 @@
 		7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListUITests.swift; sourceTree = "<group>"; };
 		7E6A973120C5603E00A383BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6D29B320F29C9F00FE0D45 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		7E7FAC6B20FA7CE8003483FC /* MaritalStatusUIPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritalStatusUIPickerViewDelegate.swift; sourceTree = "<group>"; };
+		7E7FAC6B20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMaritalStatusUIPickerViewDelegate.swift; sourceTree = "<group>"; };
 		7E83500F20EC31A600A40188 /* contractType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractType.swift; sourceTree = "<group>"; };
 		7E83501120EC327900A40188 /* finishingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishingType.swift; sourceTree = "<group>"; };
 		7E83501320EC387B00A40188 /* InsertSellerContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerContactInformationViewController.swift; sourceTree = "<group>"; };
 		7E83501520EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerPersonalInformationViewController.swift; sourceTree = "<group>"; };
-		7E94A67E20FB74E300A3A484 /* UITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldDelegate.swift; sourceTree = "<group>"; };
-		7E94A68220FB799500A3A484 /* CustomMethodsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMethodsExtension.swift; sourceTree = "<group>"; };
+		7E94A67E20FB74E300A3A484 /* BuyerFamilyInfoUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerFamilyInfoUITextFieldDelegate.swift; sourceTree = "<group>"; };
+		7E94A68220FB799500A3A484 /* InsertBuyerMaritalAndFamilyInformationViewControllerCustomMethodsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerMaritalAndFamilyInformationViewControllerCustomMethodsExtension.swift; sourceTree = "<group>"; };
+		7E94A68620FB838B00A3A484 /* InsertBuyerPersonalInformationViewControllerCustomMethodsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerPersonalInformationViewControllerCustomMethodsExtension.swift; sourceTree = "<group>"; };
+		7E94A68C20FBF91E00A3A484 /* BuyerPersonalInfoUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerPersonalInfoUITextFieldDelegate.swift; sourceTree = "<group>"; };
 		7E9A518520CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertSellerPersonalInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +161,7 @@
 		7E4443AA20CBFCD70028E64D /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				7E94A68B20FBF8EC00A3A484 /* InsertBuyerPersonalInformationViewController */,
 				7E94A68420FB82C300A3A484 /* InsertBuyerMaritalAndFamilyInformationViewController */,
 			);
 			path = Delegate;
@@ -263,6 +268,7 @@
 		7E94A68020FB794500A3A484 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7E94A68520FB836100A3A484 /* InsertBuyerPersonalInformationViewController */,
 				7E94A68120FB795800A3A484 /* InsertBuyerMaritalAndFamilyInformationViewController */,
 			);
 			path = Extensions;
@@ -271,7 +277,7 @@
 		7E94A68120FB795800A3A484 /* InsertBuyerMaritalAndFamilyInformationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7E94A68220FB799500A3A484 /* CustomMethodsExtension.swift */,
+				7E94A68220FB799500A3A484 /* InsertBuyerMaritalAndFamilyInformationViewControllerCustomMethodsExtension.swift */,
 			);
 			path = InsertBuyerMaritalAndFamilyInformationViewController;
 			sourceTree = "<group>";
@@ -279,10 +285,26 @@
 		7E94A68420FB82C300A3A484 /* InsertBuyerMaritalAndFamilyInformationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7E7FAC6B20FA7CE8003483FC /* MaritalStatusUIPickerViewDelegate.swift */,
-				7E94A67E20FB74E300A3A484 /* UITextFieldDelegate.swift */,
+				7E7FAC6B20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift */,
+				7E94A67E20FB74E300A3A484 /* BuyerFamilyInfoUITextFieldDelegate.swift */,
 			);
 			path = InsertBuyerMaritalAndFamilyInformationViewController;
+			sourceTree = "<group>";
+		};
+		7E94A68520FB836100A3A484 /* InsertBuyerPersonalInformationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E94A68620FB838B00A3A484 /* InsertBuyerPersonalInformationViewControllerCustomMethodsExtension.swift */,
+			);
+			path = InsertBuyerPersonalInformationViewController;
+			sourceTree = "<group>";
+		};
+		7E94A68B20FBF8EC00A3A484 /* InsertBuyerPersonalInformationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E94A68C20FBF91E00A3A484 /* BuyerPersonalInfoUITextFieldDelegate.swift */,
+			);
+			path = InsertBuyerPersonalInformationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,21 +444,23 @@
 				7E58CD3C20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift in Sources */,
 				7E4443A420CBEF750028E64D /* SellerViewController.swift in Sources */,
 				7E4443B420CC02740028E64D /* ApartmentType.swift in Sources */,
+				7E94A68D20FBF91E00A3A484 /* BuyerPersonalInfoUITextFieldDelegate.swift in Sources */,
 				7E58CD3620ED389B00AB0FF1 /* InsertBuyerMaritalAndFamilyInformationViewController.swift in Sources */,
 				7E83501420EC387B00A40188 /* InsertSellerContactInformationViewController.swift in Sources */,
 				7E4443AC20CBFE090028E64D /* Gender.swift in Sources */,
 				7E83501020EC31A600A40188 /* contractType.swift in Sources */,
-				7E94A67F20FB74E300A3A484 /* UITextFieldDelegate.swift in Sources */,
-				7E94A68320FB799500A3A484 /* CustomMethodsExtension.swift in Sources */,
+				7E94A67F20FB74E300A3A484 /* BuyerFamilyInfoUITextFieldDelegate.swift in Sources */,
+				7E94A68320FB799500A3A484 /* InsertBuyerMaritalAndFamilyInformationViewControllerCustomMethodsExtension.swift in Sources */,
 				7E58CD3820ED38F700AB0FF1 /* InsertBuyerContactInformationViewController.swift in Sources */,
 				7E3A7D7820F8F51E005F62D5 /* BuyerTableViewCell.swift in Sources */,
 				7E3A7D7A20F8F535005F62D5 /* RealEstateTableViewCell.swift in Sources */,
 				7E83501620EC3BCF00A40188 /* InsertBuyerPersonalInformationViewController.swift in Sources */,
 				7E3A7D7620F8F504005F62D5 /* SellerTableViewCell.swift in Sources */,
+				7E94A68720FB838B00A3A484 /* InsertBuyerPersonalInformationViewControllerCustomMethodsExtension.swift in Sources */,
 				7E83501220EC327900A40188 /* finishingType.swift in Sources */,
 				7E4443B220CC023C0028E64D /* MaritalStatus.swift in Sources */,
 				7E6A971520C5602700A383BA /* CustomerList.xcdatamodeld in Sources */,
-				7E7FAC6C20FA7CE8003483FC /* MaritalStatusUIPickerViewDelegate.swift in Sources */,
+				7E7FAC6C20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift in Sources */,
 				7E58CD3A20ED5D2400AB0FF1 /* RealEstateViewController.swift in Sources */,
 				7E4443A620CBEF980028E64D /* BuyerViewController.swift in Sources */,
 				7E6A970D20C5602700A383BA /* AppDelegate.swift in Sources */,
