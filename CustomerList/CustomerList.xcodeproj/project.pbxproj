@@ -29,6 +29,7 @@
 		7E6A972520C5603E00A383BA /* CustomerListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972420C5603E00A383BA /* CustomerListTests.swift */; };
 		7E6A973020C5603E00A383BA /* CustomerListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */; };
 		7E6D29B420F29C9F00FE0D45 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6D29B320F29C9F00FE0D45 /* Color.swift */; };
+		7E72D46120FCFBA600E978D9 /* InsertBuyerContactInformationViewControllerCustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E72D46020FCFBA600E978D9 /* InsertBuyerContactInformationViewControllerCustomMethods.swift */; };
 		7E7FAC6C20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7FAC6B20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift */; };
 		7E83501020EC31A600A40188 /* contractType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83500F20EC31A600A40188 /* contractType.swift */; };
 		7E83501220EC327900A40188 /* finishingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E83501120EC327900A40188 /* finishingType.swift */; };
@@ -88,6 +89,7 @@
 		7E6A972F20C5603E00A383BA /* CustomerListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListUITests.swift; sourceTree = "<group>"; };
 		7E6A973120C5603E00A383BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6D29B320F29C9F00FE0D45 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7E72D46020FCFBA600E978D9 /* InsertBuyerContactInformationViewControllerCustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertBuyerContactInformationViewControllerCustomMethods.swift; sourceTree = "<group>"; };
 		7E7FAC6B20FA7CE8003483FC /* BuyerMaritalStatusUIPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyerMaritalStatusUIPickerViewDelegate.swift; sourceTree = "<group>"; };
 		7E83500F20EC31A600A40188 /* contractType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractType.swift; sourceTree = "<group>"; };
 		7E83501120EC327900A40188 /* finishingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishingType.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 		7E94A68F20FBFD5B00A3A484 /* InsertBuyerContactInformationViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7E72D46020FCFBA600E978D9 /* InsertBuyerContactInformationViewControllerCustomMethods.swift */,
 			);
 			path = InsertBuyerContactInformationViewController;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E9A518620CC961300410DA1 /* InsertSellerPersonalInformationViewController.swift in Sources */,
+				7E72D46120FCFBA600E978D9 /* InsertBuyerContactInformationViewControllerCustomMethods.swift in Sources */,
 				7E58CD3E20ED5DDA00AB0FF1 /* RealEstateDetailPartTwoViewController.swift in Sources */,
 				7E6D29B420F29C9F00FE0D45 /* Color.swift in Sources */,
 				7E58CD3C20ED5D7800AB0FF1 /* RealEstateDetailInfoPartOneViewController.swift in Sources */,
