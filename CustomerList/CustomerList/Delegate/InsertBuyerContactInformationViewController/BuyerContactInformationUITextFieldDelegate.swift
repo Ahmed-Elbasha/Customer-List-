@@ -20,6 +20,12 @@ extension InsertBuyerContactInformationViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        let textFieldTag = textField.tag
+        if textFieldTag == 0 || textFieldTag == 1 || textFieldTag == 2 || textFieldTag == 3 {
+            if textField.text == "" {
+                textField.text = "0"
+            }
+        }
         textField.resignFirstResponder()
     }
     

@@ -10,6 +10,7 @@ import UIKit
 
 class RealEstateTableViewCell: UITableViewCell {
     
+    // MARK: IBOutlets
     @IBOutlet weak var areaNameLabel: UILabel!
     @IBOutlet weak var compoundNameLabel: UILabel!
     @IBOutlet weak var ownerNameLabel: UILabel!
@@ -34,6 +35,7 @@ class RealEstateTableViewCell: UITableViewCell {
     @IBOutlet weak var constructionDateLabel: UILabel!
     @IBOutlet weak var deliveryDateLabel: UILabel!
     
+    // MARK: Class Life Cycle Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -44,6 +46,7 @@ class RealEstateTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    // MARK: Table View Cell Configuration
     func configureCell(apartment: Apartment) {
         areaNameLabel.text = apartment.areaName
         compoundNameLabel.text = apartment.compoundName

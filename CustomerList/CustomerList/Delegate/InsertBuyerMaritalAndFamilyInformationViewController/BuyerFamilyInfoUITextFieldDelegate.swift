@@ -17,6 +17,9 @@ extension InsertBuyerMaritalAndFamilyInformationViewController: UITextFieldDeleg
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.text == "" {
+            textField.text = "0"
+        }
         textField.resignFirstResponder()
     }
     

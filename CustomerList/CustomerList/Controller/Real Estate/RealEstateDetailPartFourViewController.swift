@@ -10,6 +10,7 @@ import UIKit
 
 class RealEstateDetailPartFourViewController: UIViewController {
 
+    // MARK: Class Life Cycle Methods.
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 extension InsertBuyerMaritalAndFamilyInformationViewController {
+    
+    // MARK: Class's Data Validation and Setup
     func setClassData() {
         numberOfFamilyMembers = Int32(numberOfFamilyMembersTextField.text!)!
         numberOfKids = Int32(numberOfKidsTextField.text!)!

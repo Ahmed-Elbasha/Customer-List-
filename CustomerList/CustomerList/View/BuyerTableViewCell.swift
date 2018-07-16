@@ -10,6 +10,7 @@ import UIKit
 
 class BuyerTableViewCell: UITableViewCell {
 
+    // MARK: IBOutlets
     @IBOutlet weak var buyerNameLabel: UILabel!
     @IBOutlet weak var buyerNationalityLabel: UILabel!
     @IBOutlet weak var buyerBirthDateLabel: UILabel!
@@ -26,6 +27,7 @@ class BuyerTableViewCell: UITableViewCell {
     @IBOutlet weak var firstAddressLineLabel: UILabel!
     @IBOutlet weak var secondAddressLineLabel: UILabel!
     
+    // MARK: Class Life Cycle Methods.
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,6 +39,7 @@ class BuyerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: Table View Cell Configuration
     func configureCell(buyer: Buyer) {
         buyerNameLabel.text = buyer.buyerName
         buyerNationalityLabel.text = buyer.nationality

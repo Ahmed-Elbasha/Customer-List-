@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension InsertBuyerPersonalInformationViewController {
+    // MARK: Gender Buttons Setup
     func makeMaleButtonSelected() {
         maleButton.backgroundColor = cyan
         makeFemaleButtonNotSelected()
@@ -28,14 +29,6 @@ extension InsertBuyerPersonalInformationViewController {
         femaleButton.backgroundColor = lightMagenta
     }
     
-    func isDataValid() -> Bool {
-        if buyerName != "" && nationality != "" && birthDate == birthDateDatePicker.date.description {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     func setGenderInStringValue() {
         if maleButton.backgroundColor == cyan {
             genderInString = Gender.male.rawValue
@@ -43,6 +36,15 @@ extension InsertBuyerPersonalInformationViewController {
         
         if femaleButton.backgroundColor == magenta {
             genderInString = Gender.female.rawValue
+        }
+    }
+    
+    // MARK: Class's Data Validation and Setup
+    func isDataValid() -> Bool {
+        if buyerName != "" && nationality != "" && birthDate == birthDateDatePicker.date.description {
+            return true
+        } else {
+            return false
         }
     }
     

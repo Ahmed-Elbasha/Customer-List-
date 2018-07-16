@@ -9,10 +9,13 @@
 import UIKit
 
 class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
+    
+    // MARK: IBOutlets
     @IBOutlet weak var numberOfFamilyMembersTextField: UITextField!
     @IBOutlet weak var numberOfKidsTextField: UITextField!
     @IBOutlet weak var maritalStatusPickerView: UIPickerView!
     
+    // MARK: Class Attributes
     var buyerName: String = ""
     var buyerNationality: String = ""
     var birthdate: String = ""
@@ -23,6 +26,7 @@ class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
     
     var maritalStatusArray = ["مطلق", "ارمل", "اعزب", "متزوج"]
 
+    // MARK: Class Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         maritalStatusPickerView.delegate = self
@@ -35,6 +39,7 @@ class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
+    // MARK: View Controller Received Data Setup
     func initWithData(name: String, nationality: String, birthdate: String, gender: String) {
         self.buyerName = name
         self.buyerNationality = nationality
@@ -42,12 +47,9 @@ class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
         self.gender = gender
     }
 
+    // MARK: IBActions
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func showMeSomeDataButtonPressed(_ sender: Any) {
-        print(" Name: \(self.buyerName) \n Naionality: \(self.buyerNationality) \n Birthdate: \(self.birthdate) \n Gender: \(self.gender) \n Marital Status: \(self.maritalStatus)")
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -59,6 +61,7 @@ class InsertBuyerMaritalAndFamilyInformationViewController: UIViewController {
         }
     }
     
+    // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoveToInsertBuyerContactInformationViewController"{
             let insertBuyerContactInformationVC = segue.destination as! InsertBuyerContactInformationViewController
