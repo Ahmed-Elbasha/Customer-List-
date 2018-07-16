@@ -2178,6 +2178,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkf-KU-IXf">
                                         <rect key="frame" x="324" y="17" width="35" height="30"/>
                                         <state key="normal" title="اضافة"/>
+                                        <connections>
+                                            <action selector="addBuyerButtonpressed:" destination="M3B-Tg-oLY" eventType="touchUpInside" id="J2l-XL-ImK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2220,7 +2223,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Tye-PM-jHg">
                                         <rect key="frame" x="0.0" y="46" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rac-sl-goX">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rac-sl-goX">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="iCC-Az-LIj"/>
@@ -2241,7 +2244,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1G5-g2-49i">
                                         <rect key="frame" x="0.0" y="92" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32L-Dm-ttX">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32L-Dm-ttX">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Jsu-zb-I50"/>
@@ -2262,7 +2265,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Sez-px-9Uq">
                                         <rect key="frame" x="0.0" y="138" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNW-S5-L8z">
+                                            <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNW-S5-L8z">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="QNg-Sd-d1E"/>
@@ -2283,7 +2286,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="I38-45-1WN">
                                         <rect key="frame" x="0.0" y="184" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wa5-Y0-dca">
+                                            <textField opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wa5-Y0-dca">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ivd-u5-ugL"/>
@@ -2304,7 +2307,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="qBX-Ju-eiM">
                                         <rect key="frame" x="0.0" y="230" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oeK-PS-ypd">
+                                            <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oeK-PS-ypd">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="eyC-wD-6fU"/>
@@ -2325,7 +2328,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="U0M-Ri-bUn">
                                         <rect key="frame" x="0.0" y="276" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MFX-VV-aOP">
+                                            <textField opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MFX-VV-aOP">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="220" id="KLn-o6-RSG"/>
@@ -2346,7 +2349,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="NQa-do-QNa">
                                         <rect key="frame" x="0.0" y="322" width="343" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EoU-tj-oBw">
+                                            <textField opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EoU-tj-oBw">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="7JH-bx-J1M"/>
@@ -2366,15 +2369,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFw-hR-f7v">
-                                <rect key="frame" x="116" y="545" width="142" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Me Some Data"/>
-                                <connections>
-                                    <action selector="showMeSomeDataButtonPressed:" destination="WjC-Fb-azG" eventType="touchUpInside" id="4Io-k2-oxc"/>
-                                    <action selector="showMeSomeDataButtonPressed:" destination="M3B-Tg-oLY" eventType="touchUpInside" id="CJW-cW-tnv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2387,6 +2381,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GRx-Ll-E8r"/>
                     </view>
+                    <connections>
+                        <outlet property="firstAddressLineTextField" destination="MFX-VV-aOP" id="P2c-5f-QFn"/>
+                        <outlet property="firstEmailAddressTextField" destination="Wa5-Y0-dca" id="j0R-bW-btV"/>
+                        <outlet property="firstMobileNumberTextField" destination="rac-sl-goX" id="66S-c7-Oyu"/>
+                        <outlet property="phoneLineNumberTextField" destination="5fq-Yg-Q3p" id="R70-0L-N0W"/>
+                        <outlet property="secondAddressLineTextField" destination="EoU-tj-oBw" id="eAu-Wr-ht3"/>
+                        <outlet property="secondEmailAddressTextField" destination="oeK-PS-ypd" id="xMX-f3-U6M"/>
+                        <outlet property="secondMobileNumberTextField" destination="32L-Dm-ttX" id="Mno-eb-QT5"/>
+                        <outlet property="whatsappNumberTextField" destination="lNW-S5-L8z" id="Izg-6S-kMo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeH-OM-HQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2685,14 +2689,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-KU-YqW">
-                                <rect key="frame" x="116" y="398" width="142" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Me Some Data"/>
-                                <connections>
-                                    <action selector="showMeSomeDataButtonPressed:" destination="WjC-Fb-azG" eventType="touchUpInside" id="JZx-2u-Awp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>

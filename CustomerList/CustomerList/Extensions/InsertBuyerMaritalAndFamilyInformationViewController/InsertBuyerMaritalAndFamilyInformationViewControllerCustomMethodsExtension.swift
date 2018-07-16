@@ -16,7 +16,7 @@ extension InsertBuyerMaritalAndFamilyInformationViewController {
     }
     
     func isDataValid() -> Bool {
-        if buyerName != "" && buyerNationality != "" && birthdate != "" && gender != "" && numberOfFamilyMembers != 0 && numberOfKids != 0 && maritalStatus != "" {
+        if buyerName != "" && buyerNationality != "" && birthdate != "" && gender != "" && numberOfFamilyMembers >= 0 && numberOfKids >= 0 && maritalStatus != "" {
             return true
         } else {
             return false

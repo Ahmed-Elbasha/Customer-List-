@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPersistentStoreTypeKey</key>
+	<string>We need this permission so we can save data to device storage</string>
 </dict>
 </plist>
