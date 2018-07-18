@@ -9,12 +9,35 @@
 import UIKit
 
 class RealEstateDetailPartTwoViewController: UIViewController {
+    
+    // MARK: Class Attributes
+    var areaName: String = ""
+    var compoundName: String = ""
+    var stageNumber: Int32 = 0
+    var floorNumber: Int32 = 0
+    var buildingNumber: Int32 = 0
+    var unitNumber: Int32 = 0
+    var unitView: String = ""
+    var numberOfElevators: Int32 = 0
+    var numberOfBalconies: Int32 = 0
 
     // MARK: Class Life Cycle Methods.
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func initWithData(areaName: String, compoundName: String, stageNumber: Int32, floorNumber: Int32, buildingNumber: Int32, unitNumber: Int32, unitView: String, numberOfElevators: Int32, numberOfBalconies: Int32) {
+        self.areaName = areaName
+        self.compoundName = compoundName
+        self.stageNumber = stageNumber
+        self.floorNumber = floorNumber
+        self.buildingNumber = buildingNumber
+        self.unitNumber = unitNumber
+        self.unitView = unitView
+        self.numberOfElevators = numberOfElevators
+        self.numberOfBalconies = numberOfBalconies
     }
 
     override func didReceiveMemoryWarning() {
