@@ -10,6 +10,17 @@ import UIKit
 
 class RealEstateDetailPartTwoViewController: UIViewController {
     
+    // MARK: IBOutlets
+    @IBOutlet weak var numberOfRoomsTextField: UITextField!
+    @IBOutlet weak var numberOfMasterRoomsTextField: UITextField!
+    @IBOutlet weak var numberOfDressingRoomsTextField: UITextField!
+    @IBOutlet weak var numberOfBathRoomsTextField: UITextField!
+    @IBOutlet weak var numberOfPiecesOfReceptionTextField: UITextField!
+    @IBOutlet weak var landAreaTextField: UITextField!
+    @IBOutlet weak var buildingAreaTextField: UITextField!
+    @IBOutlet weak var gardenAreaTextField: UITextField!
+    @IBOutlet weak var ownerNameTextField: UITextField!
+    
     // MARK: Class Attributes
     var areaName: String = ""
     var compoundName: String = ""
@@ -20,14 +31,23 @@ class RealEstateDetailPartTwoViewController: UIViewController {
     var unitView: String = ""
     var numberOfElevators: Int32 = 0
     var numberOfBalconies: Int32 = 0
-
+    var numberOfRooms: Int32 = 0
+    var numberOfMasterRooms: Int32 = 0
+    var numberOfDressingRooms: Int32 = 0
+    var numberOfBathrooms: Int32 = 0
+    var numberOfPiecesOfReception: Int32 = 0
+    var landArea: Int32 = 0
+    var buildingArea: Int32 = 0
+    var gardenArea: Int32 = 0
+    var ownerName: String = ""
+    
     // MARK: Class Life Cycle Methods.
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    // MARK: View Controller Received Data Setup
     func initWithData(areaName: String, compoundName: String, stageNumber: Int32, floorNumber: Int32, buildingNumber: Int32, unitNumber: Int32, unitView: String, numberOfElevators: Int32, numberOfBalconies: Int32) {
         self.areaName = areaName
         self.compoundName = compoundName
@@ -39,25 +59,22 @@ class RealEstateDetailPartTwoViewController: UIViewController {
         self.numberOfElevators = numberOfElevators
         self.numberOfBalconies = numberOfBalconies
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
+    // MARK: IBActions
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
+    
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        self.validateTheClassDataSet()
+        self.moveToNextViewController()
+    }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MoveToRealEstateDetailPartThreeViewController" {
+            let realEstateDetailPartThreeVC = segue.destination as! RealEstateDetailPartThreeViewController
+            realEstateDetailPartThreeVC.initWithData(areaName: areaName, compoundName: compoundName, stageNumber: stageNumber, floorNumber: floorNumber, buildingNumber: buildingNumber, unitNumber: unitNumber, unitView: unitView, numberOfElevators: numberOfElevators, numberOfBalconies: numberOfBalconies, numberOfRooms: numberOfRooms, numberOfMasterRooms: numberOfMasterRooms, numberOfDressingRooms: numberOfDressingRooms, numberOfBathrooms: numberOfBathrooms, numberOfPiecesOfReception: numberOfPiecesOfReception, landArea: landArea, buildingArea: buildingArea, gardenArea: gardenArea, ownerName: ownerName)
+        }
+    }
 }

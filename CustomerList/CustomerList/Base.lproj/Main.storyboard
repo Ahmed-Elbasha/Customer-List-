@@ -2783,7 +2783,8 @@
                                         <rect key="frame" x="325" y="17" width="34" height="30"/>
                                         <state key="normal" title="التالي"/>
                                         <connections>
-                                            <segue destination="2ML-tS-4EU" kind="showDetail" id="tKK-Jo-9Y0"/>
+                                            <action selector="nextButtonPressed:" destination="ciQ-sL-H6C" eventType="touchUpInside" id="pWg-Uv-mMe"/>
+                                            <segue destination="2ML-tS-4EU" kind="showDetail" identifier="MoveToRealEstateDetailPartThreeViewController" id="tKK-Jo-9Y0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -3005,6 +3006,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fX2-ID-Dw8"/>
                     </view>
+                    <connections>
+                        <outlet property="buildingAreaTextField" destination="TRo-x5-8py" id="TOs-7c-qmX"/>
+                        <outlet property="gardenAreaTextField" destination="foq-NQ-rd2" id="giA-e9-7aa"/>
+                        <outlet property="landAreaTextField" destination="377-Z9-3EW" id="L1I-m1-GV7"/>
+                        <outlet property="numberOfBathRoomsTextField" destination="ub7-Pj-NY4" id="i8p-rT-8cs"/>
+                        <outlet property="numberOfDressingRoomsTextField" destination="o3Q-Z5-deC" id="XoU-AM-Ctx"/>
+                        <outlet property="numberOfMasterRoomsTextField" destination="4rv-pi-N15" id="JBv-6c-M8C"/>
+                        <outlet property="numberOfPiecesOfReceptionTextField" destination="MQw-sQ-hSn" id="06F-3p-n5y"/>
+                        <outlet property="numberOfRoomsTextField" destination="QjN-8J-VTt" id="Maa-OM-WsT"/>
+                        <outlet property="ownerNameTextField" destination="uJT-nU-h9g" id="9Ax-ae-4Mu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsT-FB-Tr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
