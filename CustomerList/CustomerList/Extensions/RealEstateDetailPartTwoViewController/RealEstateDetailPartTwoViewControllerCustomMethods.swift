@@ -24,6 +24,7 @@ extension RealEstateDetailPartTwoViewController {
         ownerNameTextField.delegate = self
     }
     
+    // MARK: Validation Of Class Data Set.
     func isAllDataValid() -> Bool {
         if numberOfRoomsTextField.text != "" && numberOfMasterRoomsTextField.text != "" && numberOfDressingRoomsTextField.text != "" && numberOfBathRoomsTextField.text != "" && numberOfPiecesOfReceptionTextField.text != "" && landAreaTextField.text != "" && buildingAreaTextField.text != "" && gardenAreaTextField.text != "" && ownerNameTextField.text != "" {
             return true
