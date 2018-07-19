@@ -72,6 +72,7 @@ class RealEstateDetailPartThreeViewController: UIViewController {
         self.ownerName = ownerName
     }
     
+    // MARK: IBActions
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -80,6 +81,7 @@ class RealEstateDetailPartThreeViewController: UIViewController {
         self.moveToNextViewController()
     }
     
+    // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MoveToRealEstateDetailPartFourViewController" {
             let realEstateDetailPartFourViewController = segue.destination as! RealEstateDetailPartFourViewController
