@@ -70,6 +70,9 @@ extension InsertSellerContactInformationViewController {
         secondEmailAddress = secondEmailAddressTextField.text!
         firstAddressLine = firstAddressLineTextField.text!
         secondAddressLine = secondAddressLineTextField.text!
+        if !(phoneLineNumber > 0) || !(firstMobileNumber > 0) || !(secondMobileNumber > 0) || !(whatsNumber > 0) {
+            showErrorAlertController()
+        }
     }
     
     func setRequiredClassData() {
@@ -81,6 +84,9 @@ extension InsertSellerContactInformationViewController {
         secondEmailAddress = ""
         firstAddressLine = firstAddressLineTextField.text!
         secondAddressLine = ""
+        if !(phoneLineNumber > 0) || !(firstMobileNumber > 0) || !(whatsNumber > 0) {
+            showErrorAlertController()
+        }
     }
     
     // MARK: Saving Seller Data Operation.

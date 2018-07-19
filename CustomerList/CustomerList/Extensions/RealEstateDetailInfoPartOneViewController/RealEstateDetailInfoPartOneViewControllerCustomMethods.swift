@@ -43,6 +43,9 @@ extension RealEstateDetailInfoPartOneViewController {
         unitView = viewTextField.text!
         numberOfElevators = Int32(numberOfElevatorsTextField.text!)!
         numberOfBalconies = Int32(numberOfBalconiesTextField.text!)!
+        if !(stageNumber > 0) || !(floorNumber > 0) || !(buildingNumber > 0) || !(unitNumber > 0) {
+            showErrorAlertController()
+        }
     }
     
     func showErrorAlertController() {

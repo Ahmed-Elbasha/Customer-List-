@@ -30,6 +30,9 @@ extension InsertBuyerContactInformationViewController {
         secondEmailAddress = secondEmailAddressTextField.text!
         firstAddressLine = firstAddressLineTextField.text!
         secondAddressLine = secondAddressLineTextField.text!
+        if !(phoneLineNumber > 0) || !(firstMobileNumber > 0) || !(secondMobileNumber > 0) || !(whatsappNumber > 0) {
+            showErrorAlertController()
+        }
     }
     
     func isRequiredDataIsValid() -> Bool {
@@ -49,6 +52,9 @@ extension InsertBuyerContactInformationViewController {
         secondEmailAddress = ""
         firstAddressLine = firstAddressLineTextField.text!
         secondAddressLine = ""
+        if !(phoneLineNumber > 0) || !(firstMobileNumber > 0) || !(whatsNumber > 0) {
+            showErrorAlertController()
+        }
     }
     
     func checkTheValidationOfData() {

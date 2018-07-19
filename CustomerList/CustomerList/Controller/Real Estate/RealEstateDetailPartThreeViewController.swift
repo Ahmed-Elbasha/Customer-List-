@@ -62,4 +62,7 @@ class RealEstateDetailPartThreeViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func showMeSomeDataButtonPressed(_ sender: Any) {
+        print(" Area Name: \(self.areaName) \n Compound Name: \(self.compoundName) \n Stage Number: \(self.stageNumber) \n Floor Number: \(self.floorNumber) \n Building Number: \(self.buildingNumber) \n Unit Number: \(self.unitNumber) \n Unit View: \(self.unitView) \n Number of Elevators: \(self.numberOfElevators) \n Number of Balconies: \(self.numberOfBalconies) \n Number of Rooms: \(self.numberOfRooms) \n Number of Master Rooms: \(self.numberOfMasterRooms) \n Number of Dressing Rooms: \(self.numberOfDressingRooms) \n Number of Bathrooms: \(self.numberOfBathrooms) \n Number of Pieces of Reception: \(self.numberOfPiecesOfReception) \n Land Area: \(self.landArea) \n Building Area: \(self.buildingArea) \n Garden Area: \(self.gardenArea) \n Owner Name: \(self.ownerName)")
+    }
 }
