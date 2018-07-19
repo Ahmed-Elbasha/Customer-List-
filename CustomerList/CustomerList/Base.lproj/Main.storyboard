@@ -3062,7 +3062,8 @@
                                         <rect key="frame" x="325" y="17" width="34" height="30"/>
                                         <state key="normal" title="التالي"/>
                                         <connections>
-                                            <segue destination="a0Z-3T-U36" kind="showDetail" id="Gby-eE-WuL"/>
+                                            <action selector="nextButtonPressed:" destination="2ML-tS-4EU" eventType="touchUpInside" id="HXm-cy-V1t"/>
+                                            <segue destination="a0Z-3T-U36" kind="showDetail" identifier="MoveToRealEstateDetailPartFourViewController" id="Gby-eE-WuL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -3102,7 +3103,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k06-DH-839">
                                         <rect key="frame" x="0.0" y="116" width="343" height="100"/>
                                         <subviews>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-M0-WYS">
+                                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-M0-WYS">
                                                 <rect key="frame" x="0.0" y="0.0" width="235" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="KhC-hy-T1X"/>
@@ -3120,7 +3121,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wo-rf-u6D">
                                         <rect key="frame" x="0.0" y="232" width="343" height="100"/>
                                         <subviews>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7P-ui-SXF">
+                                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7P-ui-SXF">
                                                 <rect key="frame" x="0.0" y="0.0" width="235" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="V8n-Sa-0XD"/>
@@ -3137,27 +3138,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUp-iq-25N">
-                                <rect key="frame" x="116" y="523" width="142" height="30"/>
-                                <state key="normal" title="Show Me Some Data"/>
-                                <connections>
-                                    <action selector="showMeSomeDataButtonPressed:" destination="2ML-tS-4EU" eventType="touchUpInside" id="xNW-mk-YYp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="E2Y-YQ-meF" firstAttribute="leading" secondItem="U9L-9Z-Zx1" secondAttribute="leading" id="HvN-xO-vva"/>
                             <constraint firstItem="osa-GH-0sg" firstAttribute="top" secondItem="E2Y-YQ-meF" secondAttribute="bottom" constant="16" id="Jil-HM-oUx"/>
-                            <constraint firstItem="iUp-iq-25N" firstAttribute="centerX" secondItem="raI-bA-Len" secondAttribute="centerX" id="Zlx-1u-Z6o"/>
                             <constraint firstItem="U9L-9Z-Zx1" firstAttribute="trailing" secondItem="osa-GH-0sg" secondAttribute="trailing" constant="16" id="c5L-wF-ukN"/>
                             <constraint firstItem="osa-GH-0sg" firstAttribute="leading" secondItem="U9L-9Z-Zx1" secondAttribute="leading" constant="16" id="iOf-qJ-Oiw"/>
                             <constraint firstItem="E2Y-YQ-meF" firstAttribute="trailing" secondItem="U9L-9Z-Zx1" secondAttribute="trailing" id="iPC-qu-Y7n"/>
                             <constraint firstItem="E2Y-YQ-meF" firstAttribute="top" secondItem="U9L-9Z-Zx1" secondAttribute="top" id="o8q-RD-VbF"/>
-                            <constraint firstItem="iUp-iq-25N" firstAttribute="top" secondItem="osa-GH-0sg" secondAttribute="bottom" constant="91" id="ooJ-UN-MJk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U9L-9Z-Zx1"/>
                     </view>
+                    <connections>
+                        <outlet property="contractTypePickerView" destination="FLF-Sa-mlh" id="9Du-Ix-U48"/>
+                        <outlet property="finishingTypePickerView" destination="G7P-ui-SXF" id="AkA-Fu-gKt"/>
+                        <outlet property="unitTypePickerView" destination="nxP-M0-WYS" id="1iY-oG-HCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWo-Yg-aLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3263,13 +3260,22 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGc-hP-leu">
+                                <rect key="frame" x="116" y="478" width="142" height="30"/>
+                                <state key="normal" title="Show Me Some Data"/>
+                                <connections>
+                                    <action selector="showMeSomeDataButtonPressed:" destination="a0Z-3T-U36" eventType="touchUpInside" id="zDZ-Ag-hcy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hhq-bI-Zs4" firstAttribute="top" secondItem="h3M-ut-9un" secondAttribute="top" id="0Up-H4-c7w"/>
                             <constraint firstItem="hhq-bI-Zs4" firstAttribute="leading" secondItem="h3M-ut-9un" secondAttribute="leading" id="51W-w8-bJ9"/>
                             <constraint firstItem="hhq-bI-Zs4" firstAttribute="trailing" secondItem="h3M-ut-9un" secondAttribute="trailing" id="5F9-or-eHi"/>
+                            <constraint firstItem="eGc-hP-leu" firstAttribute="centerX" secondItem="gGC-x8-sO2" secondAttribute="centerX" id="9MK-X6-S8v"/>
                             <constraint firstItem="h3M-ut-9un" firstAttribute="trailing" secondItem="yne-wH-27h" secondAttribute="trailing" constant="16" id="Yxj-Tn-s83"/>
+                            <constraint firstItem="eGc-hP-leu" firstAttribute="top" secondItem="yne-wH-27h" secondAttribute="bottom" constant="162" id="d2p-Bd-US0"/>
                             <constraint firstItem="yne-wH-27h" firstAttribute="top" secondItem="hhq-bI-Zs4" secondAttribute="bottom" constant="16" id="rVD-Uf-zCC"/>
                             <constraint firstItem="yne-wH-27h" firstAttribute="leading" secondItem="h3M-ut-9un" secondAttribute="leading" constant="16" id="tXm-LV-3MF"/>
                         </constraints>

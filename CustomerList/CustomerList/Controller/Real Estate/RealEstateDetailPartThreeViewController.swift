@@ -10,6 +10,11 @@ import UIKit
 
 class RealEstateDetailPartThreeViewController: UIViewController {
 
+    // MARK: IBOutlets
+    @IBOutlet weak var contractTypePickerView: UIPickerView!
+    @IBOutlet weak var unitTypePickerView: UIPickerView!
+    @IBOutlet weak var finishingTypePickerView: UIPickerView!
+    
     // MARK: Class Attributes
     var areaName: String = ""
     var compoundName: String = ""
@@ -29,11 +34,20 @@ class RealEstateDetailPartThreeViewController: UIViewController {
     var buildingArea: Int32 = 0
     var gardenArea: Int32 = 0
     var ownerName: String = ""
+    var selectedContractType: String = ""
+    var selectedUnitType: String = ""
+    var selectedFinishingType: String = ""
     
-    // MARK: Class Life Cycle Methods.
+    // MARK: UIPickers Data Sources Array
+    let contractType: [String] = ["للآيجار", "شراء", "للبيع"]
+    let unitType: [String] = ["عادية", "Duplex", "Triplex", "Twin House", "Town House", "Roof", "Basement", "Penta House", "Villa"]
+    let finishingType: [String] = ["على العضم", "على المحارة", "لوكس", "سوبر لوكس", "الترا لوكس"]
+    
+    // MARK: Class Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.setDelegateForUIControls()
+        self.setDataSourceForUIControls()
     }
     
     // MARK: View Controller Received Data Setup
@@ -62,7 +76,14 @@ class RealEstateDetailPartThreeViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func showMeSomeDataButtonPressed(_ sender: Any) {
-        print(" Area Name: \(self.areaName) \n Compound Name: \(self.compoundName) \n Stage Number: \(self.stageNumber) \n Floor Number: \(self.floorNumber) \n Building Number: \(self.buildingNumber) \n Unit Number: \(self.unitNumber) \n Unit View: \(self.unitView) \n Number of Elevators: \(self.numberOfElevators) \n Number of Balconies: \(self.numberOfBalconies) \n Number of Rooms: \(self.numberOfRooms) \n Number of Master Rooms: \(self.numberOfMasterRooms) \n Number of Dressing Rooms: \(self.numberOfDressingRooms) \n Number of Bathrooms: \(self.numberOfBathrooms) \n Number of Pieces of Reception: \(self.numberOfPiecesOfReception) \n Land Area: \(self.landArea) \n Building Area: \(self.buildingArea) \n Garden Area: \(self.gardenArea) \n Owner Name: \(self.ownerName)")
+    @IBAction func nextButtonPressed(_ sender: Any) {
+        self.moveToNextViewController()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MoveToRealEstateDetailPartFourViewController" {
+            let realEstateDetailPartFourViewController = segue.destination as! RealEstateDetailPartFourViewController
+            realEstateDetailPartFourViewController.initWithData(areaName: areaName, compoundName: compoundName, stageNumber: stageNumber, floorNumber: floorNumber, buildingNumber: buildingNumber, unitNumber: unitNumber, unitView: unitView, numberOfElevators: numberOfElevators, numberOfBalconies: numberOfBalconies, numberOfRooms: numberOfRooms, numberOfMasterRooms: numberOfMasterRooms, numberOfDressingRooms: numberOfDressingRooms, numberOfBathrooms: numberOfBathrooms, numberOfPiecesOfReception: numberOfPiecesOfReception, landArea: landArea, buildingArea: buildingArea, gardenArea: gardenArea, ownerName: ownerName, contractType: selectedContractType, unitType: selectedUnitType, finishingType: selectedFinishingType)
+        }
     }
 }

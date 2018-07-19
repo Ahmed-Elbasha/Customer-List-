@@ -52,7 +52,7 @@ extension InsertBuyerContactInformationViewController {
         secondEmailAddress = ""
         firstAddressLine = firstAddressLineTextField.text!
         secondAddressLine = ""
-        if !(phoneLineNumber > 0) || !(firstMobileNumber > 0) || !(whatsNumber > 0) {
+        if !(phoneLineNumber > 0) || !(firstMobileNumber > 0) || !(whatsappNumber > 0) {
             showErrorAlertController()
         }
     }
