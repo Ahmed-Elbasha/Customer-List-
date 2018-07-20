@@ -121,20 +121,19 @@ extension InsertBuyerContactInformationViewController {
         
         newBuyer.setValue(self.buyerName, forKey: "buyerName")
         newBuyer.setValue(self.buyerNationality, forKey: "nationality")
-        newBuyer.setValue(<#T##value: Any?##Any?#>, forKey: <#T##String#>)
-        buyer.birthdate = self.birthdate
-        buyer.gender = self.gender
-        buyer.familyMembers = self.numberOfFamilyMembers
-        buyer.numberOfKids = self.numberOfKids
-        buyer.maritalStatus = self.maritalStatus
-        buyer.telephoneNumber = self.phoneLineNumber
-        buyer.mobileNumber1 = self.firstMobileNumber
-        buyer.mobileNumber2 = self.secondMobileNumber
-        buyer.watsapNumber1 = self.whatsappNumber
-        buyer.emailAddress1 = self.firstEmailAddress
-        buyer.emailAddress2 = self.secondEmailAddress
-        buyer.address1 = self.firstAddressLine
-        buyer.address2 = self.secondAddressLine
+        newBuyer.setValue(self.birthdate, forKey: "birthdate")
+        newBuyer.setValue(self.gender, forKey: "gender")
+        newBuyer.setValue(self.numberOfFamilyMembers, forKey: "familyMembers")
+        newBuyer.setValue(self.numberOfKids, forKey: "numberOfKids")
+        newBuyer.setValue(self.maritalStatus, forKey: "maritalStatus")
+        newBuyer.setValue(self.phoneLineNumber, forKey: "telephoneNumber")
+        newBuyer.setValue(self.firstMobileNumber, forKey: "mobileNumber1")
+        newBuyer.setValue(self.secondMobileNumber, forKey: "mobileNumber2")
+        newBuyer.setValue(self.whatsappNumber, forKey: "watsapNumber1")
+        newBuyer.setValue(self.firstEmailAddress, forKey: "emailAddress1")
+        newBuyer.setValue(self.secondEmailAddress, forKey: "emailAddress2")
+        newBuyer.setValue(self.firstAddressLine, forKey: "address1")
+        newBuyer.setValue(self.secondAddressLine, forKey: "address2")
         
         do {
             try managedContext.save()

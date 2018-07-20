@@ -120,7 +120,6 @@ extension InsertSellerContactInformationViewController {
         
         let seller = NSEntityDescription.entity(forEntityName: "seller", in: managedContext)
         let newSeller = NSManagedObject(entity: seller!, insertInto: managedContext)
-        
         newSeller.setValue(self.sellerName, forKey: "sellerName")
         newSeller.setValue(self.sellerNationalityy, forKey: "nationality")
         newSeller.setValue(self.birthdayDate, forKey: "birthdate")
