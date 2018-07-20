@@ -115,11 +115,13 @@ extension InsertBuyerContactInformationViewController {
     }
     
     func saveBuyerData(completion: (_ completed: Bool) -> () ) {
-        let managedContext = appDelegate?.persistentContainer.viewContext
-        let buyer = Buyer(context: managedContext!)
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let buyer = NSEntityDescription.entity(forEntityName: "Buyer", in: managedContext)
+        let newBuyer = NSManagedObject(entity: buyer!, insertInto: managedContext)
         
-        buyer.buyerName = self.buyerName
-        buyer.nationality = self.buyerNationality
+        newBuyer.setValue(self.buyerName, forKey: "buyerName")
+        newBuyer.setValue(self.buyerNationality, forKey: "nationality")
+        newBuyer.setValue(<#T##value: Any?##Any?#>, forKey: <#T##String#>)
         buyer.birthdate = self.birthdate
         buyer.gender = self.gender
         buyer.familyMembers = self.numberOfFamilyMembers
@@ -135,7 +137,7 @@ extension InsertBuyerContactInformationViewController {
         buyer.address2 = self.secondAddressLine
         
         do {
-            try managedContext?.save()
+            try managedContext.save()
             print("Data Saved Successfully.")
             completion(true)
         } catch {

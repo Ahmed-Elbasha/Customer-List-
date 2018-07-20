@@ -56,7 +56,7 @@ extension RealEstateDetailPartFourViewController {
     
     // MARK: Saving Seller Data Operation.
     func saveApartmentData(_ completion: (_ complete: Bool) -> ()) {
-        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
         let apartment = Apartment(context: managedContext)
         
         apartment.areaName = self.areaName

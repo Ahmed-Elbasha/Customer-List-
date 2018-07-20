@@ -122,18 +122,17 @@ extension InsertSellerContactInformationViewController {
         let newSeller = NSManagedObject(entity: seller!, insertInto: managedContext)
         
         newSeller.setValue(self.sellerName, forKey: "sellerName")
-        seller.sellerName = self.sellerName
-        seller.nationality = self.sellerNationalityy
-        seller.birthdate = self.birthdayDate.description
-        seller.gender = self.sellerGender
-        seller.telephoneNumber = self.phoneLineNumber
-        seller.mobileNumber1 = self.firstMobileNumber
-        seller.mobileNumber2 = self.secondMobileNumber
-        seller.watsapNumber1 = self.whatsNumber
-        seller.emailAddress1 = self.firstEmailAddress
-        seller.emailAddress2 = self.secondEmailAddress
-        seller.address1 = self.firstAddressLine
-        seller.address2 = self.secondAddressLine
+        newSeller.setValue(self.sellerNationalityy, forKey: "nationality")
+        newSeller.setValue(self.birthdayDate, forKey: "birthdate")
+        newSeller.setValue(self.sellerGender, forKey: "gender")
+        newSeller.setValue(self.phoneLineNumber, forKey: "telephoneNumber")
+        newSeller.setValue(self.firstMobileNumber, forKey: "mobileNumber1")
+        newSeller.setValue(self.secondMobileNumber, forKey: "mobileNumber2")
+        newSeller.setValue(self.whatsNumber, forKey: "watsapNumber1")
+        newSeller.setValue(self.firstEmailAddress, forKey: "emailAddress1")
+        newSeller.setValue(self.secondEmailAddress, forKey: "emailAddress2")
+        newSeller.setValue(self.firstAddressLine, forKey: "address1")
+        newSeller.setValue(self.secondAddressLine, forKey: "address2")
         
         do {
             try managedContext.save()
