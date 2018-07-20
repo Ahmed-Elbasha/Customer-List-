@@ -32,7 +32,7 @@ extension InsertSellerPersonalInformationViewController {
     
     // MARK: Class's Data Validation and Setup
     func isDataValid() -> Bool {
-        if sellerNameTextField.text != "" && nationalityTextField.text != "" && birthdayDate  == birthDayDatePicker.description {
+        if sellerNameTextField.text != "" && nationalityTextField.text != ""  {
             return true
         } else {
             return false

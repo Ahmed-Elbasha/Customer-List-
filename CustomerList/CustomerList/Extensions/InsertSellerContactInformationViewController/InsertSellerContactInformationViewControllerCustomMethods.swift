@@ -116,8 +116,8 @@ extension InsertSellerContactInformationViewController {
     }
     
     func saveSeller(_ completion: (_ completed: Bool) -> ()) {
-        let managedContext: NSManagedObjectContext? = appDelegate.persistentContainer.viewContext
-        let seller = Seller(context: managedContext!)
+        let managedContext: NSManagedObjectContext = (appDelegate?.persistentContainer.viewContext)!
+        let seller = Seller(context: managedContext)
         
         seller.sellerName = self.sellerName
         seller.nationality = self.sellerNationalityy
@@ -133,7 +133,7 @@ extension InsertSellerContactInformationViewController {
         seller.address2 = self.secondAddressLine
         
         do {
-            try managedContext?.save()
+            try managedContext.save()
             completion(true)
         } catch {
             print ("Couldn't Save data. \(error.localizedDescription)")

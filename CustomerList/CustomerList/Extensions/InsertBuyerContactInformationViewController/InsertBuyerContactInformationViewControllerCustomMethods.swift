@@ -115,31 +115,31 @@ extension InsertBuyerContactInformationViewController {
     }
     
     func saveBuyerData(completion: (_ completed: Bool) -> () ) {
-        let managedContext: NSManagedObjectContext? =  appDelegate.persistentContainer.viewContext
+        let managedContext = appDelegate?.persistentContainer.viewContext
         let buyer = Buyer(context: managedContext!)
         
-        buyerName = buyer.buyerName!
-        buyerNationality = buyer.nationality!
-        birthdate = buyer.birthdate!
-        gender = buyer.gender!
-        numberOfFamilyMembers = buyer.familyMembers
-        numberOfKids = buyer.numberOfKids
-        maritalStatus = buyer.maritalStatus!
-        phoneLineNumber = buyer.telephoneNumber
-        firstMobileNumber = buyer.mobileNumber1
-        secondMobileNumber = buyer.mobileNumber2
-        whatsappNumber = buyer.watsapNumber1
-        firstEmailAddress = buyer.emailAddress1!
-        secondEmailAddress = buyer.emailAddress2!
-        firstAddressLine = buyer.address1!
-        secondAddressLine = buyer.address2!
+        buyer.buyerName = self.buyerName
+        buyer.nationality = self.buyerNationality
+        buyer.birthdate = self.birthdate
+        buyer.gender = self.gender
+        buyer.familyMembers = self.numberOfFamilyMembers
+        buyer.numberOfKids = self.numberOfKids
+        buyer.maritalStatus = self.maritalStatus
+        buyer.telephoneNumber = self.phoneLineNumber
+        buyer.mobileNumber1 = self.firstMobileNumber
+        buyer.mobileNumber2 = self.secondMobileNumber
+        buyer.watsapNumber1 = self.whatsappNumber
+        buyer.emailAddress1 = self.firstEmailAddress
+        buyer.emailAddress2 = self.secondEmailAddress
+        buyer.address1 = self.firstAddressLine
+        buyer.address2 = self.secondAddressLine
         
         do {
             try managedContext?.save()
             print("Data Saved Successfully.")
             completion(true)
         } catch {
-            print("Data Saving Operation Failed" + error.localizedDescription)
+            print("Data Saving Operation Failed \(error.localizedDescription)")
             completion(false)
         }
     }
