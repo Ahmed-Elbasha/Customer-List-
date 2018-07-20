@@ -11,11 +11,14 @@ import UIKit
 import CoreData
 
 extension RealEstateDetailPartFourViewController {
+    
+    // MARK: Set Delegate For ViewController UIControls
     func setDelegateForUIControls() {
         deliveryYearTextField.delegate = self
         constructionYearTextField.delegate = self
     }
     
+    // MARK: Class's Data Validation and Setup
     func isAllDataValid() -> Bool {
         if deliveryYearTextField.text != "" && constructionYearTextField.text != "" {
             return true
@@ -51,6 +54,7 @@ extension RealEstateDetailPartFourViewController {
         }
     }
     
+    // MARK: Saving Seller Data Operation.
     func saveApartmentData(_ completion: (_ complete: Bool) -> ()) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         let apartment = Apartment(context: managedContext)

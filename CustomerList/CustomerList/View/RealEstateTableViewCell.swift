@@ -67,7 +67,7 @@ class RealEstateTableViewCell: UITableViewCell {
         buildingAreaLabel.text = String(describing: apartment.buildingArea)
         gardenAreaLabel.text = String(describing: apartment.gardenArea)
         contractTypeLabel.text = apartment.contractType
-        apartmentTypeLabel.text = apartment.apartmentType
+        apartmentTypeLabel.text = apartment.unitType
         finishingTypeLabel.text = apartment.finishingType
         constructionDateLabel.text = apartment.constructionYear
         deliveryDateLabel.text = apartment.deliveryYear

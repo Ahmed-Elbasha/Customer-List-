@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-let appDelegate = UIApplication.shared.delegate as? AppDelegate
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 class InsertSellerContactInformationViewController: UIViewController {
     

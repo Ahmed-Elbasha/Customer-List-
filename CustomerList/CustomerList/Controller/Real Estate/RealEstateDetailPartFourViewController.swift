@@ -10,7 +10,7 @@ import UIKit
 
 class RealEstateDetailPartFourViewController: UIViewController {
 
-    
+    // MARK: IBOutlets
     @IBOutlet weak var deliveryYearTextField: UITextField!
     @IBOutlet weak var constructionYearTextField: UITextField!
     
@@ -70,6 +70,7 @@ class RealEstateDetailPartFourViewController: UIViewController {
         self.finishingType = finishingType
     }
     
+    // MARK: IBActions
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

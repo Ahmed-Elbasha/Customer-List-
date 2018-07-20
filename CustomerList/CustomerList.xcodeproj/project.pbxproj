@@ -177,17 +177,71 @@
 		7E4443AA20CBFCD70028E64D /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				7E7AC8ED2100CBC300452F45 /* RealEstateDetailPartFourViewController */,
-				7E7AC8E02100874100452F45 /* RealEstateDetailPartThreeViewController */,
-				7E5F7C3320FF9CDF00DA872F /* RealEstateDetailPartTwoViewController */,
-				7E72D46E20FD263E00E978D9 /* RealEstateDetailInfoPartOneViewController */,
+				7E540498210221CD007AC960 /* Real Estate */,
+				7E540497210221BC007AC960 /* Buyer */,
+				7E54049621022196007AC960 /* Seller */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		7E54049621022196007AC960 /* Seller */ = {
+			isa = PBXGroup;
+			children = (
 				7E72D46920FD0A3C00E978D9 /* InsertSellerContactInformationViewController */,
 				7E72D46220FD05AB00E978D9 /* InsertSellerPersonalInformationViewController */,
+			);
+			path = Seller;
+			sourceTree = "<group>";
+		};
+		7E540497210221BC007AC960 /* Buyer */ = {
+			isa = PBXGroup;
+			children = (
 				7E94A68E20FBFD5100A3A484 /* InsertBuyerContactInformationViewController */,
 				7E94A68B20FBF8EC00A3A484 /* InsertBuyerPersonalInformationViewController */,
 				7E94A68420FB82C300A3A484 /* InsertBuyerMaritalAndFamilyInformationViewController */,
 			);
-			path = Delegate;
+			path = Buyer;
+			sourceTree = "<group>";
+		};
+		7E540498210221CD007AC960 /* Real Estate */ = {
+			isa = PBXGroup;
+			children = (
+				7E7AC8ED2100CBC300452F45 /* RealEstateDetailPartFourViewController */,
+				7E7AC8E02100874100452F45 /* RealEstateDetailPartThreeViewController */,
+				7E5F7C3320FF9CDF00DA872F /* RealEstateDetailPartTwoViewController */,
+				7E72D46E20FD263E00E978D9 /* RealEstateDetailInfoPartOneViewController */,
+			);
+			path = "Real Estate";
+			sourceTree = "<group>";
+		};
+		7E540499210221EE007AC960 /* Seller */ = {
+			isa = PBXGroup;
+			children = (
+				7E72D46820FD0A3400E978D9 /* InsertSellerContactInformationViewController */,
+				7E72D46520FD060200E978D9 /* InsertSellerPersonalInformationViewController */,
+			);
+			path = Seller;
+			sourceTree = "<group>";
+		};
+		7E54049A21022202007AC960 /* Buyer */ = {
+			isa = PBXGroup;
+			children = (
+				7E94A68F20FBFD5B00A3A484 /* InsertBuyerContactInformationViewController */,
+				7E94A68520FB836100A3A484 /* InsertBuyerPersonalInformationViewController */,
+				7E94A68120FB795800A3A484 /* InsertBuyerMaritalAndFamilyInformationViewController */,
+			);
+			path = Buyer;
+			sourceTree = "<group>";
+		};
+		7E54049B21022220007AC960 /* Real Estate */ = {
+			isa = PBXGroup;
+			children = (
+				7E7AC8EC2100C4FC00452F45 /* RealEstateDetailPartFourViewController */,
+				7E7AC8E12100874E00452F45 /* RealEstateDetailPartThreeViewController */,
+				7E5F7C3420FF9CED00DA872F /* RealEstateDetailPartTwoViewController */,
+				7E72D46F20FD264A00E978D9 /* RealEstateDetailInfoPartOneViewController */,
+			);
+			path = "Real Estate";
 			sourceTree = "<group>";
 		};
 		7E58CD4320ED8CD900AB0FF1 /* Seller */ = {
@@ -387,15 +441,9 @@
 		7E94A68020FB794500A3A484 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7E7AC8EC2100C4FC00452F45 /* RealEstateDetailPartFourViewController */,
-				7E7AC8E12100874E00452F45 /* RealEstateDetailPartThreeViewController */,
-				7E5F7C3420FF9CED00DA872F /* RealEstateDetailPartTwoViewController */,
-				7E72D46F20FD264A00E978D9 /* RealEstateDetailInfoPartOneViewController */,
-				7E72D46820FD0A3400E978D9 /* InsertSellerContactInformationViewController */,
-				7E72D46520FD060200E978D9 /* InsertSellerPersonalInformationViewController */,
-				7E94A68F20FBFD5B00A3A484 /* InsertBuyerContactInformationViewController */,
-				7E94A68520FB836100A3A484 /* InsertBuyerPersonalInformationViewController */,
-				7E94A68120FB795800A3A484 /* InsertBuyerMaritalAndFamilyInformationViewController */,
+				7E54049B21022220007AC960 /* Real Estate */,
+				7E54049A21022202007AC960 /* Buyer */,
+				7E540499210221EE007AC960 /* Seller */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

@@ -116,9 +116,12 @@ extension InsertSellerContactInformationViewController {
     }
     
     func saveSeller(_ completion: (_ completed: Bool) -> ()) {
-        let managedContext: NSManagedObjectContext = (appDelegate?.persistentContainer.viewContext)!
-        let seller = Seller(context: managedContext)
+        let managedContext = appDelegate.persistentContainer.viewContext
         
+        let seller = NSEntityDescription.entity(forEntityName: "seller", in: managedContext)
+        let newSeller = NSManagedObject(entity: seller!, insertInto: managedContext)
+        
+        newSeller.setValue(self.sellerName, forKey: "sellerName")
         seller.sellerName = self.sellerName
         seller.nationality = self.sellerNationalityy
         seller.birthdate = self.birthdayDate.description
