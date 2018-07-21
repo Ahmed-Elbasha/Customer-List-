@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-let appDelegate = UIApplication.shared.delegate as! AppDelegate
-
 class InsertSellerContactInformationViewController: UIViewController {
+
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // MARK: IBOutlets.
     @IBOutlet weak var phoneLineNumberTextField: UITextField!

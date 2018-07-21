@@ -56,32 +56,34 @@ extension RealEstateDetailPartFourViewController {
     
     // MARK: Saving Seller Data Operation.
     func saveApartmentData(_ completion: (_ complete: Bool) -> ()) {
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let apartment = Apartment(context: managedContext)
+        let managedContext = appDelegate.persistentContainer.viewContext 
         
-        apartment.areaName = self.areaName
-        apartment.compoundName = self.compoundName
-        apartment.stageNumber = self.stageNumber
-        apartment.floorNumber = self.floorNumber
-        apartment.buildingNumber = self.buildingNumber
-        apartment.unitNumber = self.unitNumber
-        apartment.view = self.unitView
-        apartment.numberOfElevators = self.numberOfElevators
-        apartment.numberOfBalconies = self.numberOfBalconies
-        apartment.numberOfRooms = self.numberOfRooms
-        apartment.numberOfMasterRooms = self.numberOfMasterRooms
-        apartment.numberOfDressingRooms = self.numberOfDressingRooms
-        apartment.numberOfBathrooms = self.numberOfBathrooms
-        apartment.numberOfPiecesOfReception = self.numberOfPiecesOfReception
-        apartment.landArea = self.landArea
-        apartment.buildingArea = self.buildingArea
-        apartment.gardenArea = self.gardenArea
-        apartment.ownerName = self.ownerName
-        apartment.contractType = self.contractType
-        apartment.unitType = self.unitType
-        apartment.finishingType = self.finishingType
-        apartment.deliveryYear = String(describing: deliveryYear)
-        apartment.constructionYear = String(describing: constructionYear)
+        let apartment = NSEntityDescription.entity(forEntityName: "Apartment", in: managedContext)
+        let newApartment = NSManagedObject(entity: apartment!, insertInto: managedContext)
+        
+        newApartment.setValue(self.areaName, forKey: "areaName")
+        newApartment.setValue(self.compoundName, forKey: "compoundName")
+        newApartment.setValue(self.stageNumber, forKey: "stageNumber")
+        newApartment.setValue(self.floorNumber, forKey: "floorNumber")
+        newApartment.setValue(self.buildingNumber, forKey: "buildingNumber")
+        newApartment.setValue(self.unitNumber, forUndefinedKey: "unitNumber")
+        newApartment.setValue(self.unitView, forUndefinedKey: "unitView")
+        newApartment.setValue(self.numberOfElevators, forKey: "numberOfElevators")
+        newApartment.setValue(self.numberOfBalconies, forKey: "numberOfBalconies")
+        newApartment.setValue(self.numberOfRooms, forKey: "numberOfRooms")
+        newApartment.setValue(self.numberOfMasterRooms, forKey: "numberOfMasterRooms")
+        newApartment.setValue(self.numberOfDressingRooms, forKey: "numberOfDressingRooms")
+        newApartment.setValue(self.numberOfBathrooms, forKey: "numberOfBathrooms")
+        newApartment.setValue(self.numberOfPiecesOfReception, forKey: "numberOfPiecesOfReception")
+        newApartment.setValue(self.landArea, forKey: "landArea")
+        newApartment.setValue(self.buildingArea, forKey: "buildingArea")
+        newApartment.setValue(self.gardenArea, forKey: "gardenArea")
+        newApartment.setValue(self.ownerName, forKey: "ownerName")
+        newApartment.setValue(self.contractType, forKey: "contractType")
+        newApartment.setValue(self.unitType, forKey: "unitType")
+        newApartment.setValue(self.finishingType, forKey: "finishingType")
+        newApartment.setValue(self.deliveryYear, forKey: "deliveryYear")
+        newApartment.setValue(self.constructionYear, forKey: "constructionYear")
         
         do {
             try managedContext.save()

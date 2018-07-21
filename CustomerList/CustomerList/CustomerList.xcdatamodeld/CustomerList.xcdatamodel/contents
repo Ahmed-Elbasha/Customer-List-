@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Apartment" representedClassName="Apartment" syncable="YES" codeGenerationType="class">
-        <attribute name="apartmentID" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="areaName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="buildingArea" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="buildingNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -24,25 +23,24 @@
         <attribute name="stageNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="unitNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="unitType" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="view" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitView" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Buyer" representedClassName="Buyer" syncable="YES" codeGenerationType="class">
         <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="buyerID" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="buyerName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="emailAddress1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="emailAddress2" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="familyMembers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="maritalStatus" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mobileNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="mobileNumber2" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfFamilyMembers" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="numberOfKids" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="telephoneNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="watsapNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="whatsappNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="Seller" representedClassName="Seller" syncable="YES" codeGenerationType="class">
         <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
@@ -54,14 +52,13 @@
         <attribute name="mobileNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="mobileNumber2" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="sellerID" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="sellerName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="telephoneNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="watsapNumber1" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="whatsappNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Apartment" positionX="-54" positionY="135" width="128" height="405"/>
-        <element name="Buyer" positionX="-63" positionY="-18" width="128" height="285"/>
-        <element name="Seller" positionX="-54" positionY="108" width="128" height="240"/>
+        <element name="Apartment" positionX="-54" positionY="135" width="128" height="390"/>
+        <element name="Buyer" positionX="-54" positionY="171" width="128" height="268"/>
+        <element name="Seller" positionX="-45" positionY="297" width="128" height="225"/>
     </elements>
 </model>

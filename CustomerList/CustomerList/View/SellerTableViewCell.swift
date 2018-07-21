@@ -46,7 +46,7 @@ class SellerTableViewCell: UITableViewCell {
         phoneLineNumberLabel.text = String(describing: seller.telephoneNumber)
         firstMobileNumberLabel.text = String(describing: seller.mobileNumber1)
         secondMobileNumberLabel.text = String(describing: seller.mobileNumber2)
-        whatsNumberLabel.text = String(describing: seller.watsapNumber1)
+        whatsNumberLabel.text = String(describing: seller.whatsappNumber)
         firstEmailAddressLabel.text = seller.emailAddress1
         secondEmailAddressLabel.text = seller.emailAddress2
         firstAddressLineLabel.text = seller.address1

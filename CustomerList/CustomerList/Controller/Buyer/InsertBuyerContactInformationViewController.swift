@@ -11,6 +11,8 @@ import CoreData
 
 class InsertBuyerContactInformationViewController: UIViewController {
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
     // MARK: IBOutlets
     @IBOutlet weak var phoneLineNumberTextField: UITextField!
     @IBOutlet weak var firstMobileNumberTextField: UITextField!

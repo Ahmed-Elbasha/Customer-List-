@@ -127,7 +127,7 @@ extension InsertSellerContactInformationViewController {
         newSeller.setValue(self.phoneLineNumber, forKey: "telephoneNumber")
         newSeller.setValue(self.firstMobileNumber, forKey: "mobileNumber1")
         newSeller.setValue(self.secondMobileNumber, forKey: "mobileNumber2")
-        newSeller.setValue(self.whatsNumber, forKey: "watsapNumber1")
+        newSeller.setValue(self.whatsNumber, forKey: "whatsappNumber")
         newSeller.setValue(self.firstEmailAddress, forKey: "emailAddress1")
         newSeller.setValue(self.secondEmailAddress, forKey: "emailAddress2")
         newSeller.setValue(self.firstAddressLine, forKey: "address1")

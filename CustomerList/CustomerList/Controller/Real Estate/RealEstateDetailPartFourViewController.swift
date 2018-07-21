@@ -10,6 +10,8 @@ import UIKit
 
 class RealEstateDetailPartFourViewController: UIViewController {
 
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     // MARK: IBOutlets
     @IBOutlet weak var deliveryYearTextField: UITextField!
     @IBOutlet weak var constructionYearTextField: UITextField!

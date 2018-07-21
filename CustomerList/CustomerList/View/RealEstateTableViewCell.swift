@@ -55,7 +55,7 @@ class RealEstateTableViewCell: UITableViewCell {
         floorNumberLabel.text = String(describing: apartment.floorNumber)
         buildingNumberLabel.text = String(describing: apartment.buildingNumber)
         unitNumberLabel.text = String(describing: apartment.unitNumber)
-        viewLabel.text = apartment.view
+        viewLabel.text = apartment.unitView
         numberOfElevatorsLabel.text = String(describing: apartment.numberOfElevators)
         numberOfBalconiesLabel.text = String(describing: apartment.numberOfBalconies)
         numberOfRoomsLabel.text = String(describing: apartment.numberOfRooms)

@@ -45,13 +45,13 @@ class BuyerTableViewCell: UITableViewCell {
         buyerNationalityLabel.text = buyer.nationality
         buyerBirthDateLabel.text = buyer.birthdate
         buyerGenderLabel.text = buyer.gender
-        numberOfFamilyMembersLabel.text = String(describing: buyer.familyMembers)
+        numberOfFamilyMembersLabel.text = String(describing: buyer.numberOfFamilyMembers)
         numberOfKidsLabel.text = String(describing: buyer.numberOfKids)
         maritalStatusLabel.text = buyer.maritalStatus
         phoneLineNumberLabel.text = String(describing: buyer.telephoneNumber)
         firstMobileNumberLabel.text = String(describing: buyer.mobileNumber1)
         secondMobileNumberLabel.text = String(describing: buyer.mobileNumber2)
-        whatsNumberLabel.text = String(describing: buyer.watsapNumber1)
+        whatsNumberLabel.text = String(describing: buyer.whatsappNumber)
         firstEmailAddressLabel.text = buyer.emailAddress1
         secondEmailAddressLabel.text = buyer.emailAddress2
         firstAddressLineLabel.text = buyer.address1
