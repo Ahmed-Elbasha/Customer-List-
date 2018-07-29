@@ -5,9 +5,9 @@
         <attribute name="buildingArea" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="buildingNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="compoundName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="constructionYear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="constructionYear" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="contractType" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="deliveryYear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryYear" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="finishingType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="floorNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="gardenArea" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
